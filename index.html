@@ -21,7 +21,7 @@
             <a href="#a01" class="aBtn01"><span class="mHide">基本</span>資料</a>
             <a href="#a02" class="aBtn02">經歷</a>
             <a href="#a03" class="aBtn03">技能</a>
-            <a href="#a04" class="aBtn04">作品</a>
+            <a href="web.html" class="aBtn04">作品</a>
         </div>
     </nav>
     <header>
@@ -189,7 +189,7 @@
 
     $(document).ready(function () {
         //link---- 
-        for (let n = 1; n <= 4; n++) {
+        for (let n = 1; n <= 3; n++) {
             $(".aBtn0" + n).click(function () {
                 $('html,body').animate({ scrollTop: $('#a0' + n).offset().top - 66}, 800);
             });
