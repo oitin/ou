@@ -1,0 +1,33 @@
+
+/*------------------------------index--------------------------------*/
+
+body { background-color:#233c58; font-family:Arial, Verdana, "微軟正黑體", sans-serif;}
+.wrapper { width:980px; margin:0 auto;}
+
+.banneBox { position:relative;}
+.banneBox img{ display:block; }
+.date{float:right; color:#4D4D4D; font-size:12px; font-family: "新細明體" , "Arial"; position:absolute; top:12px; right:12px;}
+
+.vipBox { overflow:hidden;}
+.vipBox img { float:left;}
+
+.bnBox { overflow:hidden;}
+.bnBox a { width:490px; height:267px; display:block; float:left; position:relative;}
+.bnBox a:hover:before { content:""; width:482px; height:259px; border:#ffffff 4px solid; position:absolute; top:0; left:0;}
+
+.igBox { width:980px; padding-bottom:25px; background-color:#3a526d; background-image:url(images/ig_bg_bottom.jpg); background-position:center bottom; background-repeat:no-repeat;}
+.igContent { width:690px; margin:5px auto 0 auto; border:#e6e6e6 1px solid; text-align:center; color:#ffffff; font-size:16px; padding:40px 130px; line-height:1.6;}
+
+
+/*說明*/
+.introduceBox { width:100%; background-color:#394d61; background-image:url(images/vip_info_01.jpg); 
+background-position:top center; background-repeat:no-repeat;}
+.introduceBox02 { width:100%; background-image:url(images/vip_info_02.jpg); 
+background-position:bottom center; background-repeat:no-repeat; padding:30px 0;}
+
+.intro { width:950px; margin:0 auto;}
+.introBorder { border:#a1aab4 1px solid; overflow:hidden; padding:20px;}
+.introBorder img { float:left; }
+.introInfo { float:left; color:#ffffff; line-height:1.6; margin:20px 0 0 12px;}
+.green02 { color:#74ffd1;}
+
