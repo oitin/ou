@@ -5,7 +5,7 @@
 img{border:0; vertical-align:bottom;}
 
 /*燈箱------------*/
-.closewindow{position: fixed; margin:0;padding:0;right:21.3%;top:6%;width:25px;height:25px;font-size:2em;line-height:20px;color:#000;font-family: Calibri,Helvetica;background-color:#fff;border-radius:99em;cursor:pointer; opacity:0.7; }
+.closewindow{position: fixed; margin:0;padding:0;right:21.3%;top:6%;width:25px;height:25px;font-size:2em;line-height:20px;color:#000;font-family: Calibri,Helvetica;background-color:#fff;border-radius:99em;cursor:pointer; opacity:0.7; z-index: 5; }
 .PopbookArea{margin:40px auto; padding:1% auto; width:90%; text-align:center; position:relative; }
 .PopbookArea h3{ font-size:1.4em; margin:2% auto 1.2%; color:#ADAD42; font-family:"微軟正黑體","新細明體"; }
 .PopbookArea .more{ margin:0.5% auto 3%; padding:0.2% 0 0.7%; width:86%; font-family:"微軟正黑體","新細明體"; color:#fff; font-size:1.2em; background-color:#c13a65 !important; }
