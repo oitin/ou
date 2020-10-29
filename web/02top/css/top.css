@@ -230,7 +230,7 @@ text-align:center; color:#ffffff; font-size:40px; font-weight:bold; cursor:point
 
 	/*--暢銷作家燈箱--*/
 	.bestAuthorLightbox{ width:94%; padding:3%;}
-	.bestAuthorContent{ overflow-y:auto; max-height:55vh;}
+	.bestAuthorContent{ overflow-y:auto; max-height:55vh; -webkit-overflow-scrolling: touch;}
 	.BALpic{ float:none; display:block; width:70%; margin:10px auto 5px auto;}
 	.BALinfoTxt{ width:100%; margin-left:0%; padding:7px 5%;}
 	.BALinfoTxt h4{ text-align:center;}
