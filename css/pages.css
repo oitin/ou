@@ -21,7 +21,7 @@ nav{ position: fixed; top: 0; left: 0; z-index: 3; width: 96%; padding: 10px 2% 
 .mainTitle{ clear: both; position: relative; width: 45%; max-width: 450px; padding:25px 4%; color: #fff; font-size: 2.5rem; background-color: #d1cb5f; font-weight: bold;}
 .mainTitle:before{ content: ""; position: absolute; top: 0; right: -39px; border-top: #d1cb5f 38px solid; border-left: #d1cb5f 20px solid; border-bottom: transparent 38px solid; border-right: transparent 20px solid;}
 
-.areaBg{ overflow: hidden; width: 96%; max-width: calc(1680px - 4%); margin: -75px auto 0 auto; padding: 100px 0 20px 0;
+.areaBg{ -webkit-display: flow-root; -moz-display: flow-root; -o-display: flow-root; /*overflow: hidden;*/ width: 96%; max-width: calc(1680px - 4%); margin: -75px auto 0 auto; padding: 100px 0 20px 0;
  background: linear-gradient(45deg, rgba(239, 230, 255, 1)10%, rgba(255, 220, 225, 0.8)30%, rgba(250, 250, 230, 0.8)70%, rgba(215, 240, 251, 0.8)100%);
  background: -webkit-linear-gradient(45deg, rgba(239, 230, 255, 1)10%, rgba(255, 220, 225, 0.8)30%, rgba(250, 250, 230, 0.8)70%, rgba(215, 240, 251, 0.8)100%);}
 .areaBg.noMargin{ margin-top: -50px;}
