@@ -121,6 +121,8 @@ footer{ width: 300px; margin: 50px auto 0 auto; padding-top: 25px; color: #8e8e8
     .protList li { width: 46%; margin: 2%;}
     .protList li:last-child { margin: 2%;}
     .protList li a p{ bottom: 60px;}
+    .protList li a:hover .pic01 { display:block;}
+    .protList li a:hover .pic02 { display:none;}
 
 }
 
@@ -171,5 +173,7 @@ footer{ width: 300px; margin: 50px auto 0 auto; padding-top: 25px; color: #8e8e8
    /*--protfolio-------------------------*/
    .protList li { float:none;  width: 70%; max-width: 300px; margin: 0 auto 15px auto;}
    .protList li:last-child { margin: 0 auto 15px auto;}
+   .protList li a:hover .pic01 { display:block;}
+   .protList li a:hover .pic02 { display:none;}
 
 }
