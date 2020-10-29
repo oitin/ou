@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<title>鬧元宵猜燈謎，快來得EC!</title>
+<meta name="title" content="">
+<meta name ="description" content ="">
+<meta name="keywords" content ="">
+<meta name ="robots" content ="">
+<meta name ="googlebot" content ="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<link href="game.css" rel="stylesheet" type="text/css">
+<script src="../jvs/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="content">
+        <div class="Left">
+            <img src="images/game_title.png" width="100%" border="0" alt="鬧元宵猜燈謎">
+            <img src="images/game_info.gif" width="100%" border="0" alt="鬧元宵猜燈謎">
+            <img src="images/game_ec.gif" width="100%" border="0" alt="鬧元宵猜燈謎">
+        </div><!--Left end-->
+        
+        <div class="Right">
+            <!--開始遊戲-->
+            <div class="rBOX r01">
+                <img src="images/game_anspic.gif" width="100%" border="0" alt="鬧元宵猜燈謎" class="rigtBG">
+                <div class="startBtn"><img src="images/game_btn.png" width="100%" border="0" alt="開始遊戲"></div>
+        	</div>
+            
+            <!--答題區-->
+            <div class="rBOX r02">
+            	<p>已答對<span>30</span>題</p>
+                <div>剩餘：<span>59</span>秒</div>
+                <h2>有風吹不動，它動就生風，若要它不動，待到起秋風</h2>
+                <ul>
+                	<li>雲</li>
+                    <li>扇子</li>
+                    <li>竹蜻蜓</li>
+                </ul>
+        	</div>
+            
+            <!--結果區-->
+            <div class="rBOX r03">
+                <img src="images/game_anspic.gif" width="100%" border="0" alt="鬧元宵猜燈謎" class="rigtBG">
+                <div class="congrate">
+                	<h2>恭喜您!!<br>共猜對<span>30</span>題</h2>
+                    <p>獲得<span>100EC</span>乙張</p>
+                </div>
+                <div class="use">現領現用<br>已匯入您的<a href="#" target="_blank">會員帳戶中</a></div>
+                <div class="btn01"><a href="#" target="_blank">立即歡喜採購趣!</a></div>
+                <div class="btn02"><a href="#" target="_blank">分享FB得<span>30</span>EC!</a></div>
+        	</div>
+        </div><!--Right end-->
+    </div><!--content end-->
+</div><!--wrapper end-->
+
+<script language="javascript">
+$('.startBtn').click(function(){
+	$('.r01').fadeOut(100);
+	$('.r02').fadeIn(800);
+});
+	
+$('.r02 li').click(function(){
+	$('.r02').fadeOut(100);
+	$('.r03').fadeIn(800);
+});
+	
+$('a').click(function() {
+	event.preventDefault();
+});
+</script>
+</body>
+</html>
