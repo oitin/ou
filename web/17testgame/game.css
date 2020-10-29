@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*--------------------------------------------------------*/
+body { background-color:#900000;}
+.wrapper { width:980px; margin:0 auto;}
+button,input{ outline:none;}
+
+/*--共用--*/
+h1 { font-family:Arial, Verdana, "微軟正黑體", sans-serif; font-size:48px; color:#ffffff; text-align:center; line-height:1.2; /*margin-top:-18px;*/}
+.box { position:relative; display:table; padding:0 50px 30px 50px; margin:0 auto;}
+.goBack { display:block; width:95px; height:175px; background-image:url(images/vote_back.png); position:absolute; bottom:0; right:0; text-indent:-99999px;}
+.goBack:hover { background-image:url(images/vote_back_a.png); }
+
+.alluse { overflow:hidden; width:660px; height:304px; background-color:#fbe8f4; margin:20px auto 0 auto; padding:10px; text-align:center; font-family:Arial, Verdana, "標楷體", sans-serif;}
+
+/*--輸入區--*/
+.enterBox {}
+.ebLeft { float:left;}
+.EBL01 { width:511px; height:211px; padding-top:45px; border:#900000 2px solid; font-size:48px; text-align:center; }
+.EBL01 input { width:221px; height:40px; padding:5px 10px; background-color:transparent; border:0; border-bottom:#000000 2px solid; display:inline-block; 
+vertical-align:text-bottom; font-size:46px; text-align:center; color:#bd2b2b;}
+.EBL01 button { width:285px; height:45px; margin-top:35px; background-color:#a10909; border:0; border-radius:100px; border-bottom:#800606 4px solid; font-size:24px; color:#ffffff; line-height:40px; 
+font-family:Arial, Verdana, "微軟正黑體", sans-serif; cursor:pointer;}
+.EBL01 button:hover { background-color:#ab2e2e; margin-top:33px;}
+.EBL02 { width:511px; height:42px; border:#900000 2px solid; border-top:0;}
+
+.ebRight { float:right; width:143px; height:300px; border:#900000 2px solid; border-left:0; position:relative;}
+.ebRight img { position:absolute; top:0; left:0; bottom:0; right:0; margin:auto;}
+
+/*--解答區--*/
+.answerBox{ display:none;}
+.abLeft { float:left; width:143px; height:227px; padding-top:73px; border:#900000 2px solid; border-right:0; position:relative; text-align:center; }
+.abLeft span { font-size:53px;}
+.abLeft p { font-size:113px; margin:0; padding:0;}
+
+.abRight { float:right;}
+.ABR01 { width:511px; height:79px;  border:#900000 2px solid; font-size:30px; color:#910000; line-height:78px; }
+.ABR02 { width:461px; height:158px; padding:0 25px; border:#900000 2px solid; border-top:0; font-size:24px; text-align:left; line-height:1.4;}
+.ABR02 p { height:94px; overflow:hidden; padding-top:25px;}
+.ABR02 a { color:#980000; text-decoration:none;}
+.ABR02 a:hover { text-decoration:underline; }
+.ABR03 { width:511px; height:59px; border:#900000 2px solid; border-top:0;}
+.ABR03 button { width:232px; height:40px; margin-top:10px; background-color:#ffb400; border:0; border-radius:100px; border-bottom:#db6e03 4px solid; font-size:22px; color:#571d1d; line-height:40px; 
+font-family:Arial, Verdana, "微軟正黑體", sans-serif; cursor:pointer;}
+.ABR03 button:hover { background-color:#ffca49; border-bottom:#c38a524px solid; margin-top:8px;}
+
+/*-- 生肖動畫--*/
+.animal01 { -webkit-animation:ani 1.3s; -moz-animation:ani 1.3s;}
+@-webkit-keyframes ani { from { margin-top:-300px;} to { margin-top:0px; }}
+@-moz-keyframes ani { from { margin-top:-300px;} to { margin-top:0px; }}
+
+/*.animal02Box { width:980px; height:245px; overflow:hidden;}
+.animal02 { -webkit-animation:ani02 1.3s; -moz-animation:ani02 1.3s; animation-delay:0.5s; animation-fill-mode:forwards; margin-top:300px;}
+@-webkit-keyframes ani02 { from { margin-top:300px;} to { margin-top:0px; }} 
+@-moz-keyframes ani02 { from { margin-top:300px;} to { margin-top:0px; }}*/
+
+.animal02Box { width:980px; height:245px; overflow:hidden; padding-top:2px;}
+.animal02 { -webkit-animation:ani02 2s infinite; -moz-animation:ani02 2s infinite; animation-delay:0.5s; animation-fill-mode:forwards;}
+@-webkit-keyframes ani02 {
+ 0% { margin-top:0px;}
+ 50% { margin-top:-8px;}
+ 100% { margin-top:0px;}
+}
+
+.animal03 { position:absolute; left:-70px; top:-70px; -webkit-animation:ani03 2s infinite; -moz-animation:ani03 2s infinite; animation-delay:0.5s; }
+@-webkit-keyframes ani03 {
+ 0% { transform:rotate(0deg);}
+ 50% { transform:rotate(5deg);}
+ 100% { transform:rotate(0deg);}
+}
+
+.animal04 { position:absolute; right:-70px; top:-90px; -webkit-animation:ani04 2s infinite; -moz-animation:ani04 2s infinite; animation-delay:0.5s;}
+@-webkit-keyframes ani04 {
+ 0% { transform:rotate(0deg);}
+ 50% { transform:rotate(-5deg);}
+ 100% { transform:rotate(0deg);}
+}
