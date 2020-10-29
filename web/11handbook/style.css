@@ -1,0 +1,62 @@
+﻿a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+img{border:0; vertical-align:bottom;}
+
+/*燈箱------------*/
+.closewindow{position: fixed; margin:0;padding:0;right:21.3%;top:6%;width:25px;height:25px;font-size:2em;line-height:20px;color:#000;font-family: Calibri,Helvetica;background-color:#fff;border-radius:99em;cursor:pointer; opacity:0.7; }
+.PopbookArea{margin:40px auto; padding:1% auto; width:90%; text-align:center; position:relative; }
+.PopbookArea h3{ font-size:1.4em; margin:2% auto 1.2%; color:#ADAD42; font-family:"微軟正黑體","新細明體"; }
+.PopbookArea .more{ margin:0.5% auto 3%; padding:0.2% 0 0.7%; width:86%; font-family:"微軟正黑體","新細明體"; color:#fff; font-size:1.2em; background-color:#c13a65 !important; }
+.more a{ color:#fff; text-decoration:none; cursor:pointer;}
+.more:hover{ text-decoration:none; background:#c22558; cursor:pointer;}
+.noDecoration, a:hover, a:active { text-decoration: none;}
+
+/*-----------------出版社按鈕------------------*/
+.publisharea{margin:0 auto 10px auto;padding:0;width:950px;height:auto;background:#fff; border-radius:30px; }
+.publisharea .titlecolumn_week{margin:0 auto;padding:0;width:100%;height:auto;text-align:center; }
+img.publistTitle{ margin:2% 0 1% 4%; width:13%;}
+
+.pubbn { overflow:hidden; width:95%; text-align:center; margin:0 auto; padding:0 0 4% 0; }
+.pubbn li { float:left; width:18.2%; margin:4px 0.3%; border:#ffe1e3 2px solid; padding:3px; font-size:1.5em; font-family:微軟正黑體; font-weight:bold; list-style-type:none;}
+.pubbn li a { display:block; width:100%; padding:5px 0; line-height:1.3; background-color:#ffe1e3; color:#e7567c; text-align:center; text-decoration:none; }
+.pubbn a:hover,
+.pubbn a:active{ background-color:#ffd4db;}
+
+
+
+/*===================================================================================================================================*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+/*燈箱------------*/
+.closewindow{ right:2%; }
+.PopbookArea{ width:95%;}
+.PopbookArea h3{ margin:2% auto 5px;}
+.PopbookArea .more{ width:100%; }	
+
+/*-----------------出版社按鈕------------------*/
+.publisharea{margin:0 auto;width:95%; }
+img.publistTitle{ margin:2% 0 0.5% 5%;}
+
+.pubbn li { width:17.8%; font-size:1.4em; }
+
+}
+
+/*====================================================================================================================================*/
+@media screen and (max-width:767px) {
+/*燈箱------------*/
+.closewindow{ right:2%;top:5%; }
+.PopbookArea{ width:98%;}
+.PopbookArea h3{ margin:8px auto 8px;}
+.PopbookArea .more{ padding:2% 0 3%; width:98%;}		
+
+
+/*-----------------出版社按鈕------------------*/
+.publisharea{margin:0 auto 4% auto;width:95%; }
+img.publistTitle{ width:28%; margin:3% 0 1% 5%;}
+
+.pubbn { margin:0 0 0 4%; padding:0 0 7% 0; }
+.pubbn li { width:29%; margin:4px 0.5%; padding:2px; font-size:1em; }
+
+
+}
