@@ -79,7 +79,7 @@ position:absolute; left:0; right:0; bottom:5px;}
 /*--cartBtnBox-------------------------*/
 .cartBtnBox{ width: 90%; margin: 0 auto 30px auto;}
 .cartBtnTitle{ background-color: #b2b2b2; width: calc(100% - 60px); margin: 30px auto 5px auto; padding: 10px 20px; color: #fff; font-size: 1.6rem; font-weight: bold; border-radius: 3px;}
-.cartList{ display: flow-root; }
+.cartList{ overflow: hidden;}
 .cartList li{ float: left; width: calc(16.6% - 42px); margin: 10px; padding: 10px; border: 1px solid #ecebeb; background-color: #fff;}
 .cartList li .bookName{ margin: 8px 0; font-size: 1.5rem; font-weight: bold; line-height: 1.3; height: 3.6rem; overflow: hidden;}
 
