@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<title>小小店員我要報名</title>
+<meta charset="UTF-8" />
+<meta name="title" content="">
+<meta name ="description" content ="">
+<meta name="keywords" content ="">
+<meta name ="robots" content ="">
+<meta name ="googlebot" content ="">
+<link rel="image_src" href="圖片網址" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<link href="css/pages.css" rel="stylesheet" type="text/css">
+<script src="../jvs/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+<header id="goTop">
+	<a href="ks.html"><img src="images/time_header_2.jpg" width="100%" class="headerPC"></a>
+    <a href="ks.html"><img src="images/time_header_2_m.jpg" width="100%" class="headerM"></a>
+</header>
+
+<article class="content">
+    <div class="searchBox">
+    	<p class="topInfo">您所選擇的場次／店別：</p>
+    </div><!--searchBox end-->
+    
+    <section>
+        <div class="rwdTable Rtd">
+            <ul class="tableItem">
+                <li class="mW01 pcTW-1p5 mTW-5"><div class="Rtdwrap">店別</div></li>
+                <li class="mW01 pcTW-1 mTW-4"><div class="Rtdwrap  rTxtCenter">場次日期</div></li>
+                <li class="mNo2 pcTW-1p5"><div class="Rtdwrap">場次時間</div></li>
+                <li class="mNo2 pcTW-2p5"><div class="Rtdwrap">地址</div></li>
+                <li class="mNo2 pcTW-1p5"><div class="Rtdwrap">電話</div></li>
+                <li class="mNo2 pcTW-1"><div class="Rtdwrap">可報名人數</div></li>
+                <li class="mNo2 pcTW-1"><div class="Rtdwrap">費用</div></li>
+            </ul><!--tableItem end-->
+            <ul>
+                <input type="checkbox" id="odsList02" name="rwdList" class="rwdCheck" checked="checked"><label for="odsList02" class="rwdLabel"></label>
+                <li class="mW01 pcTW-1p5 mTW-5"><div class="Rtdwrap">國醫中心加盟店</div></li>
+                <li class="mW01 pcTW-1 mTW-4"><div class="Rtdwrap  rTxtCenter">05/05(六)</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">時間</b>14:00~16:00</div></li>
+                <li class="mBreak pcTW-2p5">
+                	<div class="Rtdwrap rTxtLeft map">
+                    	<b class="pcNo">地址</b><a href="map.html" target="_blank" class="oaAlink">台北市天母西路3號之32-52號<img src="images/time_map.gif" width="100%"></a>
+                    </div>
+                </li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">電話</b>02-23691245</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap"><b class="pcNo">可報名人數</b>999人</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap"><b class="pcNo">費用</b>400</div></li>
+            </ul>
+        </div><!--rwdTable end-->
+        
+        <div class="signUPbox">
+        <ul class="sUPmember">
+        	<li>
+                <p><span class="txtRed">*</span><span class="sUPitem">家長姓名：</span><input type="text"></p>
+                <p><span class="txtRed">*</span><span class="sUPitem">家長電話：</span><input type="text"></p>
+            </li>
+        	<li>
+                <p><span class="txtRed">*</span><span class="sUPitem">小朋友姓名：</span><input type="text"></p>
+                <p><span class="txtRed">*</span><span class="sUPitem">小朋友年齡：</span><input type="number" pattern="[0-9]*" placeholder="建議年齡4~7歲"></p>
+            </li>
+        	<li>
+                <p><span class="txtRed">*</span><span class="sUPitem">小朋友姓名：</span><input type="text"></p>
+                <p><span class="txtRed">*</span><span class="sUPitem">小朋友年齡：</span><input type="number" pattern="[0-9]*" placeholder="建議年齡4~7歲"></p>
+                <div class="sUPadd">新增</div><!--預設為1筆,按新增才會增加下一筆欄位,新增鈕永遠在最後一筆-->
+            </li>
+        </ul><!--sUPmember end-->
+        <div class="sUPinfo">
+            <p>* 因服務證書及工作證會於活動前準備，請家長確實填寫小朋友姓名 (現場恕無法修改姓名)</p>
+            <p>* 各場次若已額滿則不開放後補，若臨時有取消／異動，將再重新開放報名</p>
+        </div><!--sUPinfo end-->
+        <div class="sUPbtn"><a href="time.html">回上一頁</a><a href="signup_succ.html">確定報名</a></div>
+        </div><!--signUPbox end-->
+        
+    </section><!--section end-->
+</article><!--content end-->
+
+
+<!--goTop鈕-->
+<p class="goTop"></p>
+<p class="goHome"><a href="ks.html"><img src="images/time_homebtn.png" width="100%"></a></p>
+<script language="javascript">
+$('.goTop').click(function(){
+	$('html,body').animate({scrollTop:$('#goTop').offset().top}, 800);
+});
+</script>
+
+</body>
+</html>
