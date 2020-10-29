@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<title>小小店員報名查詢</title>
+<meta charset="UTF-8" />
+<meta name="title" content="">
+<meta name ="description" content ="">
+<meta name="keywords" content ="">
+<meta name ="robots" content ="">
+<meta name ="googlebot" content ="">
+<link rel="image_src" href="圖片網址" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<link href="css/pages.css" rel="stylesheet" type="text/css">
+<link href="css/popshared.css" rel="stylesheet" type="text/css">
+<script src="../jvs/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+<header id="goTop">
+	<a href="ks.html"><img src="images/time_header_4.jpg" width="100%" class="headerPC"></a>
+    <a href="ks.html"><img src="images/time_header_4_m.jpg" width="100%" class="headerM"></a>
+</header>
+
+<article class="content">
+    <div class="searchBox">
+    	<!--<p class="orderDetailTitle"><img src="images/orderdetail_icon01.png" width="100%" class="orderDicon">線上刷卡</p>線上刷卡標題-->
+        <p class="orderDetailTitle"><img src="images/orderdetail_icon02.png" width="100%" class="orderDicon">門市繳費</p><!--門市繳費標題-->
+    </div><!--searchBox end-->
+    
+    <section>
+    <div class="orderDetailBox">
+    	<div class="odLeft">
+        	<div class="odLtitle"><p>訂單編號：0100000001234567</p></div>
+            <ul>
+            	<li><span>場次編號：</span>1234567891011</li>
+                <li><span>店別：</span>國醫中心加盟店</li>
+                <li><span>場次日期：</span>05/05(六)</li>
+                <li><span>場次時間：</span>14:00~16:00</li>
+                <li><span>地址：</span><a href="map.html" target="_blank" class="oaAlink">台北市天母西路3號之32-52號<img src="images/time_map.gif" width="100%"></a></li>
+                <li><span>電話：</span>02-236912345</li>
+                <li><span>報名人數：</span>１人</li>
+                <li><span>費用：</span>400元</li>
+                <li><span>繳費狀態：</span>線上刷卡完成</li>
+                <li><span>報名狀態：</span>已報名
+                	<p class="odCancel">我要取消</p><!--線上刷卡可線上取消-->
+                    <p class="odCancelStore">若需取消請洽詢原報名門市</p><!--門市繳費無法線上取消-->
+                </li>
+            </ul>
+        </div><!--odLeft end-->
+        
+        <div class="odRight">
+        	<div class="odRtitle"><p>報名資訊</p></div>
+            <ul>
+            	<li>
+                    <div class="odRinfo">
+                        <p class="odRlist"><span>家長姓名：</span>王家長</p>
+                        <p class="odRlist"><span>家長手機：</span>0912345678</p>
+                    </div>
+                    <p class="odRbtn">修改</p>
+                </li>
+            	<li>
+                    <div class="odRinfo">
+                        <p class="odRlist"><span>小朋友姓名：</span>王小妹</p>
+                        <p class="odRlist"><span>小朋友年齡：</span>8</p>
+                    </div>
+                    <p class="odRbtn">修改</p>
+                </li>
+                <li>
+                    <div class="odRinfo">
+                        <p class="odRlist"><span>小朋友姓名：</span><input type="text"></p>
+                        <p class="odRlist"><span>小朋友年齡：</span><input type="number" pattern="[0-9]*"></p>
+                    </div>
+                    <p class="odRbtn btnOK">確認</p>
+                </li>
+            </ul>
+        </div><!--odRight end-->
+    </div><!--orderDetailBox end-->
+    <a href="orderlist.html" class="odLink">回上一頁</a>
+    </section><!--section end-->
+</article><!--content end-->
+
+<!--點我要取消,跳出popup-->
+<!--<div class="popOverlay">
+<div class="popBox">
+	<div class="cPPUcontact">
+		<h2>您確定要取消以下報名嗎？</h2>
+		<div class="popContent">
+            <div class="odLeft odLppup">
+                <div class="odLtitle"><p>訂單編號：0100000001234567</p></div>
+                <ul>
+                    <li><span>店別：</span>國醫中心加盟店</li>
+                    <li><span>場次日期：</span>05/05(六)</li>
+                    <li><span>報名人數：</span>１人</li>
+                    <li><span>費用：</span>400元</li>
+                </ul>
+            </div>
+			<div class="popBtn"><button class="ppBtn">取消</button><button class="ppBtn">確定</button></div>
+		</div>
+	</div>
+</div>
+</div>--><!--popOverlay end-->
+
+<!--確定取消後跳提醒popup-->
+<!--<div class="popOverlay">
+<div class="popBox">
+	<div class="cPPUcontact">
+		<h2 class="ppCancelNote">您的報名已取消</h2>
+	</div>
+    <div class="popBtn"><button class="ppBtn ppCanBtn">關閉</button></div>
+</div>
+</div>--><!--popOverlay end-->
+
+<!--goTop鈕-->
+<p class="goTop"></p>
+<p class="goHome"><a href="ks.html"><img src="images/time_homebtn.png" width="100%"></a></p>
+<script language="javascript">
+$('.goTop').click(function(){
+	$('html,body').animate({scrollTop:$('#goTop').offset().top}, 800);
+});
+</script>
+</body>
+</html>
