@@ -68,7 +68,7 @@ header{ overflow: hidden; display: grid; grid-template-columns: repeat(3,1fr); g
 .skillList{ display: flow-root; padding: 0 4%;}
 .skillL { float: left; width: 48%;}
 .skillR { float: right; width: 48%;}
-.skillList li{ display: flow-root; padding: 13px 0; border-bottom: #d8d8d8 1px solid;}
+.skillList li{ overflow: hidden; padding: 13px 0; border-bottom: #d8d8d8 1px solid;}
 
 .skName { display: flex; align-items: center; float: left; padding-left: 15px; color: #7B7B7B; font-size: 1.8rem;}
 .skName img{ width: 42px; margin-right: 15px;}
