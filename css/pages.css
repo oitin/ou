@@ -85,7 +85,7 @@ position:absolute; left:0; right:0; bottom:5px;}
 
 /*oldCart*/
 .btnOldStyle{ position: relative; width: 80px; height: 18px; border: #a40112 1px solid; border-radius: 3px; background-image: url(../images/cartbtn_bg.jpg); 
-line-height: 18px; font-family: "新細明體"; color:#fff; text-align: center; letter-spacing: 1px;}
+line-height: 18px; font-family: "新細明體"; color:#fff; text-align: center; letter-spacing: 1px; font-size: 12px;}
 .btnOldStyle::before{ content: ""; position: absolute; top: 0; left: 5px; width: 16px; height: 18px; background-image: url(../images/cartbtn_icon.png);}
 .btnOldStyle span{ margin-left: 18px;}
 
@@ -149,12 +149,14 @@ footer{ width: 300px; margin: 0 auto 30px auto; padding-top: 25px; color: #8e8e8
 @media screen and (min-width:768px) and (max-width:1023px) {
     /*--webDesign-------------------------*/
     .mainTitle{ padding:27px 4%; color: #fff; font-size: 2.2rem;}
+    .webList li{ width: 48%;}
 
     /*--graphic-------------------------*/
     .graphicGallery a{ width: 25%;}
 
     /*--cartBtnBox-------------------------*/
     .cartList li{ width: calc(33.3% - 42px);}
+    /* .btnOldStyle{ font-size: 13px;} */
     .cartList.cartOld li:nth-child(n+4){ display: none;}
 
 }
