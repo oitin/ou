@@ -37,7 +37,8 @@ nav{ position: fixed; top: 0; left: 0; z-index: 3; width: 96%; padding: 10px 2% 
 /*food*/
 .illuFood0{ width: 50%; margin: 0 auto;}
 .illuFood1{ width: 60%; margin-top: -3%; padding-bottom: 6%;}
-.illuFood2{ position: relative; float: right; width: 60%; margin-top: -52%;}
+.illuFood2{ position: relative; float: right; width: 60%; margin-top: -52%; position: relative; left: 60%; animation:foodAni 1s forwards;}
+@keyframes foodAni { from {left: 60%; opacity: 0;} to {left: 0; opacity: 1;}}
 
 /*character*/
 .illuChar0{ width: 50%; margin: 0 auto;}
