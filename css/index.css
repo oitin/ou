@@ -16,6 +16,7 @@ nav a{ display: inline-block; margin: 25px 10px 25px 25px; font-size: 1.6rem; co
 @-webkit-keyframes navAni { from {top:-20px; background-color: rgba(255,255,255,0);} to {top:0; background-color: rgba(255,255,255,0.95);}}
 
 /*--header-------------------------*/
+.metaPic{ display: none;}
 header{ overflow: hidden; display: grid; grid-template-columns: repeat(3,1fr); grid-gap: 2%;}
 .bgColor1{ position: relative; width: 980px; margin-top: 50px; padding-top: 6%; padding-bottom: 5%;
  background: -webkit-linear-gradient(22deg, rgb(251, 248, 231), rgb(216, 243, 249));
