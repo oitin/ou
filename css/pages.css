@@ -43,7 +43,7 @@ nav{ position: fixed; top: 0; left: 0; z-index: 3; width: 96%; padding: 10px 2% 
 .illuChar0{ width: 50%; margin: 0 auto;}
 .illuChar1,.illuChar2{ float: left; width: 50%; margin-bottom: 5%;}
 
-.illuCharList1{ clear: both; display: flow-root;}
+.illuCharList1{ clear: both; overflow: hidden;}
 .illuChar3{ float: left; width: 30%; margin-top: 7%;}
 .illuChar4{ float: left; width: 27%; margin-top: -34%; margin-left: 28%;}
 .illuChar5{ float: right; width: 38%;}
