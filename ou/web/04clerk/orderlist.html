@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<title>小小店員報名查詢</title>
+<meta charset="UTF-8" />
+<meta name="title" content="">
+<meta name ="description" content ="">
+<meta name="keywords" content ="">
+<meta name ="robots" content ="">
+<meta name ="googlebot" content ="">
+<link rel="image_src" href="圖片網址" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<link href="css/pages.css" rel="stylesheet" type="text/css">
+<script src="../jvs/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+<header id="goTop">
+	<a href="ks.html"><img src="images/time_header_4.jpg" width="100%" class="headerPC"></a>
+    <a href="ks.html"><img src="images/time_header_4_m.jpg" width="100%" class="headerM"></a>
+</header>
+
+<article class="content">
+    <div class="searchBox">
+    	<p class="topInfo">OOO您好<br>您的小小店員報名資訊如下：</p>
+    </div><!--searchBox end-->
+    
+    <section>
+        <div class="rwdTable Rtd">
+            <ul class="tableItem">
+                <li class="mW01 pcTW-2p5 mTW-5"><div class="Rtdwrap">訂單編號</div></li>
+                <li class="mW01 pcTW-2 mTW-4"><div class="Rtdwrap  rTxtCenter">場次日期</div></li>
+                <li class="mNo2 pcTW-1p5"><div class="Rtdwrap">繳費日期</div></li>
+                <li class="mNo2 pcTW-2p5"><div class="Rtdwrap">付款方式</div></li>
+                <li class="mNo2 pcTW-1p5"><div class="Rtdwrap">查詢訂單明細</div></li>
+            </ul><!--tableItem end-->
+            <ul>
+                <input type="checkbox" id="odsList01" name="rwdList" class="rwdCheck"><label for="odsList01" class="rwdLabel"></label>
+                <li class="mW01 pcTW-2p5 mTW-5p5"><div class="Rtdwrap">0100000001234567</div></li>
+                <li class="mW01 pcTW-2 mTW-3p5"><div class="Rtdwrap rTxtCenter">05/05(六)</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">繳費日期</b>06/11</div></li>
+                <li class="mBreak pcTW-2p5"><div class="Rtdwrap"><b class="pcNo">付款方式</b>線上刷卡完成</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap rwdChangeBtn"><a href="orderdetail.html">訂單明細</a></div></li>
+            </ul>
+            <ul>
+                <input type="checkbox" id="odsList02" name="rwdList" class="rwdCheck"><label for="odsList02" class="rwdLabel"></label>
+                <li class="mW01 pcTW-2p5 mTW-5p5"><div class="Rtdwrap">0100000001234568</div></li>
+                <li class="mW01 pcTW-2 mTW-3p5"><div class="Rtdwrap rTxtCenter">05/05(六)</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">繳費日期</b>06/11</div></li>
+                <li class="mBreak pcTW-2p5"><div class="Rtdwrap"><b class="pcNo">付款方式</b>線上刷卡完成</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap rwdChangeBtn"><a href="orderdetail.html">訂單明細</a></div></li>
+            </ul>
+            <ul>
+                <input type="checkbox" id="odsList03" name="rwdList" class="rwdCheck"><label for="odsList03" class="rwdLabel"></label>
+                <li class="mW01 pcTW-2p5 mTW-5p5"><div class="Rtdwrap">0100000001234569</div></li>
+                <li class="mW01 pcTW-2 mTW-3p5"><div class="Rtdwrap rTxtCenter">05/05(六)</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">繳費日期</b>06/11</div></li>
+                <li class="mBreak pcTW-2p5"><div class="Rtdwrap"><b class="pcNo">付款方式</b>門市繳費完成</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap rwdChangeBtn"><a href="orderdetail.html">訂單明細</a></div></li>
+            </ul>
+        </div><!--rwdTable end-->
+        
+    </section><!--section end-->
+</article><!--content end-->
+
+<!--goTop鈕-->
+<p class="goTop"></p>
+<p class="goHome"><a href="ks.html"><img src="images/time_homebtn.png" width="100%"></a></p>
+<script language="javascript">
+$('.goTop').click(function(){
+	$('html,body').animate({scrollTop:$('#goTop').offset().top}, 800);
+});
+</script>
+
+</body>
+</html>

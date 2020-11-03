@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*--------------------my reset--------------------*/
+* { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+html { font-family:Arial, Verdana, "微軟正黑體", sans-serif;
+width:100%; height:100%; min-height:100%;
+box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;
+text-size-adjust:none; -webkit-text-size-adjust:none;}
+/*--------------------my reset--------------------*/
+.ksdown_pc{margin:0;padding:0;width:100%;height:auto;}
+
+header{ background-color:#ffcf49; background-image:url(../images/index_header_wave.png); background-position:center bottom; background-position-y:360px; background-repeat:no-repeat;}
+.headerPic{ width:1345px; margin:0 auto; background-image:url(../images/index_header.png); background-position-x:center;  background-position-y:-147px; background-attachment:fixed; background-repeat:no-repeat;}
+.headerPicM{ display:none;}
+
+article { margin-top:-60px; position:relative; z-index:2;}
+.withLimit{ overflow:hidden; width:980px; margin:0 auto;}
+
+/*----限定活動+Slogan----*/
+.stepTitle{ display:none;}
+.stepBG { background-image:url(../images/index_bg_01.jpg); background-position:center top; padding-bottom:100px;}
+.bannerArea{ overflow:hidden;}
+.bn01{ width:580px; float:left;}
+.bn02{ width:400px; float:left;}
+
+/*----news----*/
+.impoNews{ overflow:hidden; width:96%; margin:10px auto; padding:20px; background-color:rgba(217,224,236,0.27); border-radius:5px;}
+.iNewsTitle{ float:left; width:13%;}
+.iNewsInfo{ float:left; width:87%; padding:9px 0 0 15px; font-size:19px; color:#27457c; line-height:1.5;}
+
+/*----nav----*/
+.navPC{ display:block; overflow:hidden; padding-top:15px; margin-bottom:20px;}
+.navPC p{ float:left; margin:0 1.5% 0 1.5%; width:22%;}
+.navPC p:hover{ position:relative; top:-5px;}
+.navM{ display:none;}
+
+/*----上班打卡----*/
+.stepBox{ overflow:hidden; position:relative;}
+p.step{ float:left; width:50%;}
+.step01{ margin-top:10%;}
+.step02{ margin-top:23%;}
+.step03{ margin-top:-12%;}
+.step04{ margin-top:2%;}
+.step05{ margin-top:-3%; margin-left:23%;}
+/*.step06{ margin-top:5%;}*/
+.stepBox .arrow{ position:absolute; z-index:2;}
+.stepBox .arrow01{ width:69.5%; top:2%; left:3%;}
+.stepBox .arrow02{ width:20.3%; top:30%; left:39%;}
+.stepBox .arrow03{ width:12.7%; top:60%; left:40%;}
+.stepBox .arrow04{ width:27%; top:71%; left:65%; -webkit-transform:rotate(-26deg); -moz-transform:rotate(-26deg); -o-transform:rotate(-26deg); transform:rotate(-26deg);}
+.stepBox .arrow05{ display:none;}
+
+/*限定任務輪播*/
+.step3swiper{ float:left; width:50%; margin-top:-12%; position:relative;}
+.step3swiper .st3BNList{ padding-bottom:4%;}
+.step3swiper .swiper-button-prev.swiPre, .step3swiper .swiper-button-next.swiNext{ position:absolute; top:71.5%; width:40px; height:40px; background-color:rgb(254,211,90); border-radius:100px; background-size:12px;}
+.step3swiper .swiper-button-prev.swiPre{ left:0;}
+.step3swiper .swiper-button-next.swiNext{ right:0;}
+
+/*----新生報到+獨家好禮----*/
+.newBox, .giftBox, .actPicBox{  width:100%; background-position:top center; background-size:contain; background-repeat:no-repeat; padding-top:5%;}
+.ngBG, .giBG, .apBG{ width:100%; background-position:top center; background-repeat:no-repeat;}
+.newTitle, .giftTitle, .actPicTitle{ display:block; width:503px;}
+/*--新生報到--*/
+.newBox{ background-image:url(../images/index_bg_wave02.png);}
+.newBG{ background-color:#314174;}
+.ngBG{ min-height:1400px;}
+.newGraffiBG01{ background-image:url(../images/index_bgnew03.gif); background-attachment:fixed;}
+.newGraffiBG02{ background-image:url(../images/index_bgnew02.png);}
+.newGraffiBG03{ background-image:url(../images/index_bgnew01.png);}
+
+.newTitle{ margin:40px auto 80px auto;}
+.newPic{ overflow:hidden;}
+.newPic img{ float:left;}
+.new01{ width:45%;}
+.new02{ width:52%; margin-top:120px;}
+.new03{ width:50.5%; margin-top:-210px;}
+.new04{ width:46.9%; margin-top:-110px;}
+
+/*--notice--*/
+.giftNotice{ width:95%; padding:30px 50px; margin:25px auto 115px auto; background-color:rgba(67,83,134,0.9); border-radius:5px; color:#ffffff;}
+.giftNotice h4{ margin:5px 0 15px 0;}
+.giftNotice ul li{ margin:10px 18px; list-style:outside; line-height:1.4;}
+.giftNotice a{ color:#fff5cc;}
+
+/*--獨家好禮--*/
+.giftBox{ background-image:url(../images/index_bg_wave03.png);}
+.giftBG{ background-color:#bcddff;}
+.giBG{ min-height:1190px;}
+.giGraffiBG01 { background-image:url(../images/index_bggift02.gif); background-attachment:fixed;}
+.giGraffiBG02{ background-image:url(../images/index_bggift01.png);}
+
+.giftTitle{ margin:40px auto 30px auto;}
+.giftPic{ overflow:hidden; padding-top:140px;}
+.giftPic img{ float:left;}
+.gift01{ width:28.4%;}
+.gift02{ width:36.5%; margin-top:-140px;}
+.gift03{ width:31%;}
+.gift04{ width:33%; margin-top:50px;}
+.gift05{ width:32.5%; margin-top:-70px;}
+.gift06{ width:33.5%; margin-top:50px;}
+
+/*--幕後花絮--*/
+.actPicBox{ background-image:url(../images/index_bg_wave04.png);}
+.actPicBG{ background-color:#ffb71a;}
+.apBG{ min-height:930px;}
+.apGraffiBG { background-image:url(../images/index_bgactpic.gif); background-attachment:fixed;}
+.actPicTitle{ margin:40px auto 30px auto;}
+
+/*花絮輪播*/
+.actPicSwiper{ width:800px; margin:0 auto; padding:10px; border-radius:5px; position:relative; background-color:rgba(255,255,255,0.8);}
+.actPicSwiper .swiper-button-prev.swiPre, .actPicSwiper .swiper-button-next.swiNext{ position:absolute; top:0; bottom:0; margin:auto 0; width:40px; height:40px;}
+.actPicSwiper .swiper-button-prev.swiPre{ left:-50px;}
+.actPicSwiper .swiper-button-next.swiNext{ right:-50px;}
+
+/*--goTop鈕--*/
+.goTop{ width:70px; height:70px; border-radius:100px; background-color:rgba(255,231,73,0.8); position:fixed; bottom:20px; right:10px; z-index:99999; cursor:pointer;}
+.goTop:after{ content:""; display:block; width:15px; height:15px; border:solid #8aabe8; border-width:0 3px 3px 0; position:absolute; right:25px; margin-top:28px; 
+-webkit-transform:rotate(-135deg); -moz-transform:rotate(-135deg); -o-transform:rotate(-135deg); transform:rotate(-135deg);}
+
+@media screen and (min-width:1024px) and (max-width:1344px) {.headerPic{ width:100%; height:520px;}}
+
+/*----------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.ksdown_pc{ display:none;}
+	
+	header{ background-position-y:100%;}
+	.headerPic{ width:100%; background-size:contain; background-position-y:-89px;}
+	
+	article { margin-top:-30px;}
+	.withLimit{ width:88%;}
+	
+	/*----限定活動+Slogan----*/
+	.bn01{ width:60%;}
+	.bn02{ width:40%;}
+
+	/*----news----*/
+	.iNewsInfo{ padding:5px 0 0 15px; font-size:18px;}
+
+	/*----新生報到----*/
+	.ngBG{ min-height:inherit; padding-bottom:35px;}
+	.newTitle{ margin-bottom:50px;}
+	.new02{ margin-top:46px;}
+	.new03{ margin-top:-130px;}
+	.new04{ margin-top:-80px;}
+
+	/*--notice--*/
+	.giftNotice{ margin-bottom:0;}
+
+	/*--獨家好禮--*/
+	.giBG{ min-height:auto; padding-bottom:50px;}
+	
+	/*--幕後花絮--*/
+	.apBG{ min-height:auto; padding-bottom:80px;}
+	.actPicTitle{ margin:20px auto 15px auto;}
+	
+	/*花絮輪播*/
+	.actPicSwiper{ width:100%; padding:5px;}
+	.actPicSwiper .swiper-button-prev.swiPre{ left:20px;}
+	.actPicSwiper .swiper-button-next.swiNext{ right:20px;}
+
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:767px) {
+	.ksdown_pc{ display:none;}
+	
+	header{ background-image:none;}
+	.headerPic{ display:none;}
+	.headerPicM{ width:100%; display:block;}
+	
+	article { margin-top:-5%;}
+	.withLimit{ width:100%;}
+	
+	/*----限定活動+Slogan----*/
+	.stepBG { padding-top:8px; padding-bottom:40px;}
+	.bn01{ width:95%; float:none; margin:5px auto 0 auto; display:block;}
+	.bn02{ width:80%; float:none; margin:-33px auto -11px auto; display:block;}
+
+	/*----news----*/
+	.impoNews{ width:94%; margin:0 auto 25px auto; padding:24px 6%;}
+	.iNewsTitle{ float:none; width:100px; margin:0 auto;}
+	.iNewsInfo{ float:none; width:100%; padding:9px 0 0 0; font-size:17px;}
+
+	/*----nav----*/
+	.navPC{ display:none;}
+	.navM{ display:block; overflow:hidden; padding:0 2%; margin-bottom:10px;}
+	.navM p{ float:left; margin:0 2% 10px 2%; width:46%;}
+	
+	/*----上班打卡----*/
+	.stepTitle{ display:block; width:90% !important; margin:0 auto;}
+	.stepBox p, .step img{ float:none; width:95%; margin:0 auto; display:block;}
+	.stepBox .arrow01{ display:none;}
+	.stepBox .arrow02{ width:47.3%; top:16.5%; left:66%; transform:rotate(-36deg); -webkit-transform:rotate(-36deg); -moz-transform:rotate(-36deg); -o-transform:rotate(-36deg); }
+	.stepBox .arrow03{ width:29.7%; top:37%; left:0; transform:rotate(56deg); -webkit-transform:rotate(56deg); -moz-transform:rotate(56deg); -o-transform:rotate(56deg); }
+	.stepBox .arrow04{ width:64%; top:53.5%; left:58%; transform:rotate(2deg); -webkit-transform:rotate(2deg); -moz-transform:rotate(2deg); -o-transform:rotate(2deg);}
+	.stepBox .arrow05{ width:29.7%; top:76%; left:-6%; transform:rotate(56deg); -webkit-transform:rotate(56deg); -moz-transform:rotate(56deg); -o-transform:rotate(56deg); display:block;}
+
+	/*限定任務輪播*/
+	.step3swiper{ float:none; width:100%; padding:10% 7% 0 7%;}
+	.step3swiper .st3BNList{ padding-bottom:5%;}
+	.step3swiper .swiper-button-prev.swiPre, .step3swiper .swiper-button-next.swiNext{ top:61%; width:30px; height:30px; background-size:8px; }
+	.step3swiper .swiper-button-prev.swiPre{ left:8px;}
+	.step3swiper .swiper-button-next.swiNext{ right:8px;}
+
+	/*----新生報到+獨家好禮----*/
+	.ngBG, .giBG, .apBG{ min-height:inherit; padding-bottom:20px;}
+	.newTitle, .giftTitle, .actPicTitle{ width:88%; margin:20px auto 40px auto;}
+	.newPic img, .giftPic img{ float:none; display:block;}
+	/*--新生報到--*/
+	.newPic{ overflow:hidden;}
+	.newPic img{  width:85%; margin:0 auto;}
+	.new03{ margin-top:-10px !important; margin-bottom:12px !important;}
+	
+	/*--notice--*/
+	.giftNotice{ width:93%; padding:20px 8%; margin-bottom:0;}
+	.giftNotice ul li{ margin:10px 5px 10px 18px; font-size:15px;}
+	
+	/*--獨家好禮--*/
+	.giftPic{ overflow:hidden; padding-top:0;}
+	.giftPic img{ width:80%; margin:0 auto 20px auto;}
+	.giftPic img.gift01{ width:75%; }
+
+	/*--幕後花絮--*/
+	.apBG{ min-height:auto; padding-bottom:80px;}
+	.actPicTitle{ margin:20px auto 15px auto;}
+	
+	/*花絮輪播*/
+	.actPicSwiper{ width:90%; padding:5px;}
+	.actPicSwiper .swiper-button-prev.swiPre, .actPicSwiper .swiper-button-next.swiNext{ position:absolute; width:30px; height:30px;}
+	.actPicSwiper .swiper-button-prev.swiPre{ left:10px;}
+	.actPicSwiper .swiper-button-next.swiNext{ right:10px;}
+
+	/*--goTop鈕--*/
+	.goTop{ width:50px; height:50px; bottom:2%; right:2%;}
+	.goTop:after{ width:15px; height:15px; right:15px; margin-top:20px;}
+	
+}
+
+

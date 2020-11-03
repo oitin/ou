@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8" />
+<title>福袋天天抽，袋袋有驚喜！</title>
+<link href="game2.css" type="text/css" rel="stylesheet">
+<meta name="title" content="">
+<meta name ="description" content ="">
+<meta name="keywords" content ="">
+<meta name ="robots" content ="">
+<meta name ="googlebot" content ="">
+
+<script src="../jvs/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<h1><img src="images/game2_header.jpg" width="100%" alt="福袋天天抽，袋袋有驚喜！最高抽中100EC，紅利20元！"></h1>
+	<div class="content">
+    	<ul>
+        	<li><p><img src="images/game2_gift.png" width="100%" alt="福袋"></p><span><img src="images/game2_light.gif" width="100%" alt=""></span></li>
+        	<li><p><img src="images/game2_gift.png" width="100%" alt="福袋"></p><span><img src="images/game2_light.gif" width="100%" alt=""></span></li>
+        	<li><p><img src="images/game2_gift.png" width="100%" alt="福袋"></p><span><img src="images/game2_light.gif" width="100%" alt=""></span></li>
+        	<li><p><img src="images/game2_gift.png" width="100%" alt="福袋"></p><span><img src="images/game2_light.gif" width="100%" alt=""></span></li>
+        	<li><p><img src="images/game2_gift.png" width="100%" alt="福袋"></p><span><img src="images/game2_light.gif" width="100%" alt=""></span></li>
+        	<li><p><img src="images/game2_gift.png" width="100%" alt="福袋"></p><span><img src="images/game2_light.gif" width="100%" alt=""></span></li>
+        	<li><p><img src="images/game2_gift.png" width="100%" alt="福袋"></p><span><img src="images/game2_light.gif" width="100%" alt=""></span></li>
+        	<li><p><img src="images/game2_gift.png" width="100%" alt="福袋"></p><span><img src="images/game2_light.gif" width="100%" alt=""></span></li>
+        </ul>
+		<div class="bagWOOD"><img src="images/game2_wood.jpg" width="100%" alt=""></div>
+        <div class="bagWOOD2"><img src="images/game2_wood.jpg" width="100%" alt=""></div>
+        
+        <!--得獎訊息-->
+        <div class="lightBox">
+        	<img src="images/fireworks.gif" width="100%" alt="">
+            <div class="getInfo">
+            	<div class="cancel"><img src="images/game2_cancel.png" width="100%" alt="關閉"></div>
+            	<h1>恭喜抽中<br><span class="txt01">福袋<span class="txt03">100</span>EC！</span><br><span class="txt02">每人每天限抽一次！</span></h1>
+                <div class="infoBtn"><a href="#">確定</a><a href="#" target="_blank">查詢個人紅利/EC</a></div>
+            </div>
+        </div><!--得獎訊息 end-->
+    </div>
+    
+    <div class="btnBox">
+    	<a href="#" target="_blank"><img src="images/game2_btn01.png" width="100%" alt="分享FB再送30EC"></a>
+        <a href="#" target="_blank"><img src="images/game2_btn02.png" width="100%" alt="回活動首頁"></a>
+    </div>
+</div>
+
+<script language="javascript">
+$('.content ul li').click(function(){
+	$('.lightBox').fadeIn(800);
+});
+	
+$('.cancel').click(function(){
+	$('.lightBox').fadeOut(800);
+});
+
+$('a').click(function() {
+	event.preventDefault();
+});
+</script>
+
+</body>
+</html>

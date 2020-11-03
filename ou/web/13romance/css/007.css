@@ -1,0 +1,337 @@
+@charset "utf-8";
+/* CSS Document */
+
+a{ outline:none;}
+
+.wrapper{ width:100%;}
+.w980{ width:980px; margin:0 auto; position:relative;}
+
+/*header---------------------------------------------------*/
+header{ width:100%; height:800px; background-image:url(../images/inx_header.jpg); background-size:cover; background-repeat:no-repeat; background-position:top center;}
+.headerTitle{ position:absolute; top:80px; right:10px;}
+.headerTitle h1{ width:582px; height:374px;}
+.headerTitle h2{ width:466px; height:194px; margin-top:23px; margin-left:53px;}
+.headerTitle h2 img{ -moz-transition: 0.4s;-webkit-transition: 0.4s;-o-transition: 0.4s;-ms-transition: 0.4s;}
+.headerTitle h2 img:hover{ -moz-transform: scale(1.03);-webkit-transform: scale(1.03);-o-transform: scale(1.03);-ms-transform: scale(1.03);}
+.hTitle_m{ display:none;}
+
+/*-----fbLikeArea-----*/
+.fbLikeArea{ overflow:hidden; padding:20px 0 0 62px;}
+.fbLikeArea div{ float:left;}
+.sharearea1 { width:165px; margin-top:23px;}
+.sharearea1 .share { width:35.8%; height:auto;}
+.sharearea1 .share img{ -moz-transition: 0.4s;-webkit-transition: 0.4s;-o-transition: 0.4s;-ms-transition: 0.4s;}
+.sharearea1 .share img:hover{ -moz-transform:translateY(-3px);-webkit-transform:translateY(-3px);-o-transform:translateY(-3px); -ms-transform:translateY(-3px);}
+.fbcount { width:57%; height:27px; padding:1% 0 0 8%; background:transparent url(../images/share_count_bg.gif) left top no-repeat; background-size:auto 100%; 
+ font-size:16px; line-height:27px; color:#3b3938;}
+.fbpic{ width:320px;}
+.fbpic img{ margin-left:-33px;}
+
+/*content---------------------------------------------------*/
+.conTitle{ width:823px; margin:0 auto;}
+.conWrapper{ overflow:hidden;}
+.conBOX, .bgflowerBOX{ background-size:cover; background-repeat:no-repeat; background-position:top center;}
+.bgflowerBOX{ padding-bottom:80px;}
+
+.con01{ background-image:url(../images/inx_bg01.jpg);}
+.con04{ background-image:url(../images/inx_bg04.jpg);}
+.bgflower01, .bgflower04{ background-image:url(../images/inx_bg01f.png); background-attachment:fixed;}
+
+.con02, .con05{ background-image:url(../images/inx_bg02.jpg);}
+.bgflower02, .bgflower05{ background-image:url(../images/inx_bg02f.png); background-attachment:fixed;}
+
+.con03, .con06{ background-image:url(../images/inx_bg03.jpg);}
+.bgflower03, .bgflower06{ background-image:url(../images/inx_bg03f.png); background-attachment:fixed;}
+
+/*-----contetn01-----*/
+.con01BookA{ overflow:hidden; padding-top:40px;}
+.con01BookA a{ float:left; display:block; width:23%; margin:1%;}
+
+.con01BookB{ overflow:hidden; padding-top:15px;}
+.con01BookB a{ float:left; display:block; width:18%; margin:1%; -moz-transition:0.4s; -webkit-transition:0.4s; -o-transition:0.4s; -ms-transition:0.4s;}
+.con01BookB a:nth-child(even){ margin-top:50px;}
+
+.con01BookA a, .con01BookB a{ -moz-transition:0.4s; -webkit-transition:0.4s; -o-transition:0.4s; -ms-transition:0.4s;}
+.con01BookA a:hover, .con01BookB a:hover{ -moz-transform:translateY(-8px);-webkit-transform:translateY(-8px);-o-transform:translateY(-8px); -ms-transform:translateY(-8px);}
+
+/*-----contetn02+03-----*/
+.conBook{ overflow:hidden; padding-top:35px; position:relative;}
+.conBook li{ float:left; width:30.333%; margin:1.5%; -moz-transition:0.4s; -webkit-transition:0.4s; -o-transition:0.4s; -ms-transition:0.4s;}
+.conBook li:hover{ -moz-transform:translateY(-8px);-webkit-transform:translateY(-8px);-o-transform:translateY(-8px); -ms-transform:translateY(-8px);}
+.conBook li a{ display:block; overflow:hidden; text-decoration:none;}
+.cbTxt h5{ font-size:26px; color:#24a9a4; text-align:center; font-weight:bold; margin:15px 0 10px 0; line-height:1.3;}
+.cbTxt p{ font-size:18px; color:#3c3c3c; line-height:1.8;}
+.cbTxt p span{ color:#da0045; font-size:16px; font-weight:bold;}
+
+.conBook li.cbBIGbook{ /*overflow:hidden;*/ width:98%; padding:30px 40px; background-color:#ffffff; border-radius:5px;}
+.conBook li.cbBIGbook .cbPic{ float:left; width:25%;}
+.conBook li.cbBIGbook .cbTxt{ float:left; width:75%; padding-left:30px;}
+.conBook li.cbBIGbook .cbTxt h5{ text-align:left; margin-bottom:30px;}
+
+.deco01{ width:150px; position:absolute; top:0; right:0; z-index:9;}
+.deco02{ width:128px; position:absolute; top:884px; right:0; z-index:9;}
+
+/*-----contetn03-----*/
+.con03 .conBook li.cbBIGbook{ margin-top:35px;}
+.con03 .conBook li .cbTxt h5{ font-size:20px; height:52px; overflow:hidden;}
+
+/*-----contetn04-----*/
+.conSaleBooks{ overflow:hidden; padding-top:35px;}
+.conSaleBooks li{ float:left; width:23%; margin:0 1% 50px 1%;}
+.conSaleBooks li a{ text-decoration:none;}
+.cSalePic{ width:222px; height:222px; border-radius:5px; background-color:#ffffff; overflow:hidden; }
+.cSalePic img{ display:block; width:auto; height:100%; margin:0 auto;-moz-transition:0.4s; -webkit-transition:0.4s; -o-transition:0.4s; -ms-transition:0.4s;}
+.conSaleBooks li a:hover .cSalePic img{ -moz-transform: scale(1.2);-webkit-transform: scale(1.2);-o-transform: scale(1.2);-ms-transform: scale(1.2);}
+.cSaleName{ height:42px; overflow:hidden; color:#24a9a4; font-size:16px; line-height:1.3; margin-top:15px; padding:0 15px; transition-property:color; transition-duration:0.6s; text-align:center;}
+.conSaleBooks li a:hover .cSaleName{ color:#d20b6e; transition-property:color; transition-duration:0.6s;}
+
+.cSalePrice{ margin-top:15px; color:#6d6d6d; text-align:center; line-height:1.2;}
+.nomalP{ text-decoration:line-through;}
+.saleP .price{ color:#e54684; font-weight:bold;}
+.saleP .price:last-child{ font-size:24px;}
+.cSaleCart .CartIcon02{ width:165px; height:58px; margin:10px auto 0 auto; background:url(../images/inx_icon_cart.png); background-size:contain; background-repeat:no-repeat;}
+.cSaleCart{ -moz-transition:0.4s; -webkit-transition:0.4s; -o-transition:0.4s; -ms-transition:0.4s;}
+.cSaleCart:hover{ -moz-transform:translateY(-5px);-webkit-transform:translateY(-5px);-o-transform:translateY(-5px); -ms-transform:translateY(-5px);}
+
+/*-----contetn05-----*/
+.conComment{ overflow:hidden;}
+.conComment li{ float:left; width:30.333%; margin:1.5%;}
+.commentBG{ background-color:#ffffff; padding:6%; line-height:1.6;}
+
+.conComment li img{ display:block;}
+.ccPic img{ width:auto; height:300px; margin:0 auto; -moz-transition:0.4s; -webkit-transition:0.4s; -o-transition:0.4s; -ms-transition:0.4s;}
+.ccPic img:hover{ -moz-transform:translateY(-8px);-webkit-transform:translateY(-8px);-o-transform:translateY(-8px); -ms-transform:translateY(-8px);}
+.ccAuthor{ height:36px; overflow:hidden; color:#24a9a4; font-size:22px; font-weight:bold; text-align:center; margin-top:10px;}
+.ccBookName{ height:25px; overflow:hidden; color:#ce2851; font-size:16px; margin-top:4px; text-align:center;}
+.ccComment{ height:204px; overflow:hidden; color:#616161; font-size:16px; margin-top:15px;}
+.ccComment span{ display:block; color:#838383; font-size:13px; margin-bottom:3px;}
+
+/*-----contetn06-----*/
+.conTitle_s{ display:block; width:auto; height:200px; margin:0 auto;}
+
+/* 出版社_BN */
+.Area6x7{ width:100%; height:1070px; margin:0 auto ; padding:1% 0; text-align:center; background:url(../images/020_bg2.jpg) center fixed no-repeat; }
+.center980{ width:980px; margin:0 auto ; }
+.Area6{ width:545px; margin:0 auto; float:left;}
+.bnZone{ width:100%; margin:1.5% auto 0; }
+.bnZone .bigBN{ width:500px; margin:0 auto 3%; text-align:center;}
+.bnZone .bigBN img{ border:solid 2px #ffb2c3;}
+.bnZone .publish{ display:none;}
+.bnZone .menulist{ width:93%; margin:0 auto; }
+.bnZone .menulist li{ list-style-type:none; float:left;}
+.bnZone .menulist img{ width:93px; height:auto; margin:0 4px 11px; border:solid 2px #b3eae8; }
+.bnZone .menulist .ON img{ border:solid 2px #ffb2c3;}
+.bnZone .menulist a:hover > img { border:solid 2px #ffb2c3;}
+
+/* 排行榜 */
+.Area7{ width:435px; margin:0 auto; float:left;}
+.boradArea{ width:100%; margin:2% auto 0;}
+.boradArea .menulist{ width:100%; height:50px; margin:0 0 10px 5px; }
+.boradArea .menulist img{ width:32.3%; border-bottom:solid 8px #f8f5f0;}
+.boradArea .menulist .ON img{ border-bottom:solid 8px #fce206;}
+.boradArea .menulist a:hover > img{ border-bottom:solid 8px #fce206;}
+
+.boradArea .boardcontent{ width:100%; margin:0 0 0 13px;}
+.billboard1{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/inx_billboard_bg01.png) no-repeat;}
+.billboard2{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/inx_billboard_bg02.png) no-repeat;}
+.billboard3{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/inx_billboard_bg03.png) no-repeat;}
+.billboard4{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/inx_billboard_bg04.png) no-repeat;}
+.billboard5{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/inx_billboard_bg05.png) no-repeat;}
+.ordercolumn{ display:none;}
+.bookcolumn{ width:103px; height:147px; border:1px solid #f4dce0; background:#fff; margin:0 0 0 125px; float:left; -moz-transition: 0.4s;-webkit-transition: 0.4s;-o-transition: 0.4s;-ms-transition: 0.4s; }
+.bookcolumn img{ width:101px; height:auto; padding:3px; background:#fff; }
+.bookcolumn:hover,
+.more img:hover{ -moz-transform: scale(1.08);-webkit-transform: scale(1.08);-o-transform: scale(1.08);-ms-transform: scale(1.08);}
+.bookSet{ width:159px; height:76px; margin:0 0 0 246px; padding:32px 0 0; text-align:left;}
+.bookSet li{ list-style-type:none; font-family:"微軟正黑體"; font-size:18px; color:#fff;}
+.bookSet .bookname{ width:100%; height:48px; margin:0 0 8px; font-size:19px; color:#fffc08; line-height:1.3em; overflow:hidden;}
+.bookSet li a{ color:#909090; font-weight:bold;}
+li.bookname a{ color:#13aaa4; font-weight:bold;}
+.bookSet a{ text-decoration:none;}
+.bookSet a:hover{ text-decoration: underline;}
+
+.boardcontent .more{ width:180px; margin:1% 0 0 236px; }
+.more img{ -moz-transition: 0.4s;-webkit-transition: 0.4s;-o-transition: 0.4s;-ms-transition: 0.4s;}
+
+.boardCon02,.boardCon03{ display:none;}
+
+/*----fixMenu----*/
+.sideMenu{ width:60px; position:fixed; right:5px; bottom:50px; }
+.sideMenu li{ list-style-type:none;}
+.sideMenu span{ display: none;}
+.sideMenu img{ width:100%; margin:0 0 4px;}
+.sideMenu img:hover{ opacity:0.8; }
+
+
+/*----------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+	.ksdown_pc{ display:none;}
+	
+	.w980{ width:760px;}
+	
+	/*header---------------------------------------------------*/
+	header{ background-position-x:-545px;}
+	.headerTitle{ right:0;}
+	
+	/*content---------------------------------------------------*/
+	.conTitle{ width:100%;}
+	
+	/*-----contetn02+03-----*/
+	.deco02{ width:90px; top:918px;}
+	.con02 .conBook li.cbBIGbook .cbTxt h5{ margin:0 0 15px 0;}
+	.con03 .conBook li.cbBIGbook .cbTxt h5{ margin:0;}
+	
+	/*-----contetn04-----*/
+	.cSalePic{ width:174px; height:174px;}
+
+	/*-----contetn05-----*/
+	.ccPic img{ height:280px;}
+	.ccComment{ height:258px;}
+	
+	/*-----contetn06-----*/
+	.conTitle_s{ width:100%; height:auto;}
+	
+	/* 出版社_BN */
+	.Area6{ float:none; margin:0 auto;}
+	
+	/* 排行榜 */
+	.Area7{ float:none; margin:0 auto; padding-top:30px; width:545px; clear:both;}
+	.boradArea{ width:91%;}
+	.boradArea .boardcontent{ margin:0;}
+	.billboard1, .billboard2, .billboard3, .billboard4, .billboard5 { width:100%; height:163px; margin:20px 0 10px 0; background-size:cover;}
+	.bookcolumn { width:103px; height:147px; margin:7px 0 0 142px;}
+	.bookcolumn img{ width:113px;}
+	.bookSet{ margin-left:275px;}
+	.boardcontent .more{ margin:15px auto 0 auto; float:right;}
+
+	/*----fixMenu----*/
+	.sideMenu{ width:100%; height:35px; z-index:1000; opacity:0.9; right:0; left:0; bottom:0; }
+	.sideMenu li{ float:left; display:table;margin:0; padding:3px 0; width:33.333333%; height:35px; line-height:30px; text-align:center; border-right:1px solid #9ceadf; background-color:#7ec2bf; box-sizing:border-box !important; }
+	.sideMenu span{ display: block; font-size:16px; font-family: "Calibri","微軟正黑體"; color:#fff; }
+	.sideMenu a{ text-decoration:none; color:#fff;}
+	.sideMenu img{ width:auto; height:30px; margin:0 auto; }
+	.pcimg{ display:none;}	
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:767px) {
+	.w980{ width:100%; overflow:hidden;}
+	
+	/*header---------------------------------------------------*/
+	header{ height:auto; background-image:none;}
+	.headerTitle{ position:inherit; top:0; left:0; padding-bottom:12px;}
+	.headerTitle h1, .headerTitle h2{ display:none;}
+	.hTitle_m{ display:block;}
+	
+	/*-----fbLikeArea-----*/
+	.fbLikeArea{ width:100%; padding:0; position:relative; left:2%; margin-top:-14%;}
+	.sharearea1{ width:130px; margin-top:3%;}
+	.sharearea1 .share{ width:42.8%;}
+	.fbcount{ height:25px; font-size:14px;}
+	.fbpic{ width:64%; margin-left:-9px;}
+	.fbpic img{ margin-left:0;}
+	
+	/*content---------------------------------------------------*/
+	.bgflowerBOX{ padding-bottom:20px;}
+	.conWrapper{ padding:0 2%;}
+	.conTitle{ width:100%;}
+	
+	/*-----contetn01-----*/
+	.con01BookA{ padding-top:4px;}
+	.con01BookA a{ width:48%;}
+	
+	.con01BookB{ padding-top:15px;}
+	.con01BookB a{ width:31.333%; margin:1%;}
+	.con01BookB a:nth-child(even){ margin-top:0;}
+	.con01BookB a:nth-child(2){ margin-top:20px;}
+	.con01BookB a:nth-child(4), .con01BookB a:nth-child(5){ margin-left:12%;}
+
+	/*-----contetn02+03-----*/
+	.conBook{ padding-top:10px;}
+	.conBook li{ float:left; width:96%; margin:3% 2%;}
+	.cbTxt{ width:87%; margin: 0 auto;}
+	.cbTxt h5{ font-size:22px; margin:15px 0 5px 0;}
+	.cbTxt p{ font-size:18px; line-height:1.6;}
+	.cbPic img{ display:block; width:80%; margin:0 auto;}
+
+	.conBook li.cbBIGbook{ width:96%; padding:0; background-color:inherit; border-radius:0;}
+	.conBook li.cbBIGbook .cbPic{ float:inherit; width:100%;}
+	.conBook li.cbBIGbook .cbTxt{ float:inherit; width:87%; padding-left:0;  margin: 0 auto;}
+	.conBook li.cbBIGbook .cbTxt h5{ text-align:center;  margin:15px 0 5px 0;}
+	
+	.deco01, .deco02{ display:none;}
+	
+	/*-----contetn03-----*/
+	.con03 .conBook li.cbBIGbook{ margin-top:2%;}
+	.con03 .conBook li .cbTxt h5{ font-size:18px; height:auto;}
+	
+	/*-----contetn04-----*/
+	.conSaleBooks{ padding-top:10px;}
+	.conSaleBooks li{  width:47%; margin:0 1.5% 30px 1.5%;}
+	.cSalePic{ width:100%; height:205px;}
+	.saleP .price:last-child{ font-size:20px;}
+	.cSaleCart .CartIcon02{ width:140px; height:50px;}
+
+	/*-----contetn05-----*/
+	.conComment li{ float:inherit; width:94%; margin:0 auto;}
+	.commentBG{ padding:8%;}
+	
+	.ccPic img{ width:90%; height:auto; margin:0 auto;}
+	.ccAuthor{ height:auto; font-size:20px;}
+	.ccComment{ height:auto; max-height:300px;}
+	.ccComment span{ font-size:14px;}
+	.ccBookName{ height:55px; font-size:18px;}
+	.ccComment{ height:256px; font-size:18px;}
+
+	/*-----contetn06-----*/
+	.conTitle_s{ width:100%; height:auto;}
+	
+	/* 出版社_BN */
+	.Area6x7{ height:auto; padding:0; background:none;}
+	.center980{ width:100%;}
+	.Area6{ width:100%; float:none; padding:2% 0; background:url(../images/020_bg6.jpg) bottom fixed repeat; background-size:130% auto;}
+	.bnZone:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; !important} /*高度填滿*/
+	.bnZone .bigBN{ width:67%; margin:0.5% 1.5% 0; float:left;}
+	.bnZone .menulist{ width:30%; margin:0.5% 0 0; float:left;}
+	.bnZone .menulist li{ width:47%; margin:0 1% 2% 0;}
+	.bnZone .menulist img{ width:100%; margin:0; box-sizing:border-box;}
+	.bnZone .publish{ display:block; width:100%;}
+	.bnZone .publish img{ border:0;}
+	
+	/* 排行榜 */
+	.Area7{ width:100%; float:none; padding:2% 0; background:url(../images/020_bg7.jpg) fixed; background-size:20% auto;}
+	.boradArea{ width:96%; margin:1% auto 0;}
+	.boradArea .menulist{ height:auto; margin:0 auto 1.5%; }
+	.boradArea .menulist .ON img{ border-bottom:solid 6px #fce206;}
+	.boradArea .menulist a:hover > img{ border-bottom:solid 6px #fce206;}
+	
+	.boradArea .boardcontent{ width:95%; margin:0 auto; }
+	.billboard1, .billboard2, .billboard3, .billboard4, .billboard5{border-radius:5px;}
+	.billboard1{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(243,213,218,0.8);}
+	.billboard2{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(194,230,228,0.8);}
+	.billboard3{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(250,220,199,0.8);}
+	.billboard4{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(212,212,239,0.8);}
+	.billboard5{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(209,232,223,0.8);}
+	.ordercolumn{ display:block; width:16%; padding:5%; font-size:36px; font-family:Arial Black, Helvetica; color:#fff; text-align:center; display:inline-block; vertical-align:middle;}
+	.bookcolumn{ width:30%; height:auto; border:none; margin:0 ; float:none; display:inline-block; vertical-align: middle;}
+	.bookcolumn img{ width:98%; height:auto; padding:3px;}
+	.bookSet{ width:40%; height:auto; margin:0 0 0 3%; padding:0 ; float:none; display:inline-block; vertical-align:middle;}
+	.bookSet li{ font-size:14px;}
+	.bookSet .bookname{ height:auto; margin:0 2% 8px 2%; font-size:16px;}
+	
+	.boardcontent .more{ width:50%; margin:15px auto 30px;}
+
+	/*----fixMenu----*/
+	.sideMenu{ width:100%; height:35px; z-index:1000; opacity:0.9; right:0; left:0; bottom:0; }
+	.sideMenu li{ float:left; display:table;margin:0; padding:3px 0; width:33.333333%; height:35px; line-height:30px; text-align:center; border-right:1px solid #9ceadf; background-color:#7ec2bf; box-sizing:border-box !important; }
+	.sideMenu span{ display: block; font-size:16px; font-family: "Calibri","微軟正黑體"; color:#fff; }
+	.sideMenu a{ text-decoration:none; color:#fff;}
+	.sideMenu img{ width:auto; height:30px; margin:0 auto; }
+	.pcimg{ display:none;}	
+		
+}
+
+@media screen and (min-width:320px) and (max-width:374px) { .fbpic{ width:58%;} .sharearea1{margin-top:2%;}}
+

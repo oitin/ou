@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<title>小小店員場次查詢</title>
+<meta charset="UTF-8" />
+<meta name="title" content="">
+<meta name ="description" content ="">
+<meta name="keywords" content ="">
+<meta name ="robots" content ="">
+<meta name ="googlebot" content ="">
+<link rel="image_src" href="圖片網址" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<link href="css/pages.css" rel="stylesheet" type="text/css">
+<script src="../jvs/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+<header id="goTop">
+	<a href="ks.html"><img src="images/time_header_1.jpg" width="100%" class="headerPC"></a>
+    <a href="ks.html"><img src="images/time_header_1_m.jpg" width="100%" class="headerM"></a>
+</header>
+
+<article class="content">
+    <div class="searchBox">
+        <select>
+            <option>選擇縣市</option>
+            <option>台北市</option>
+            <option>新北市</option>
+        </select>
+        <select>
+            <option>選擇區域</option>
+            <option>士林區</option>
+            <option>大安區</option>
+        </select>
+        <select>
+            <option>選擇日期</option>
+            <option>2018/10/22</option>
+            <option>2018/12/16</option>
+        </select>
+    </div><!--searchBox end-->
+    
+    <section>
+        <div class="rwdTable Rtd">
+            <ul class="tableItem">
+                <li class="mW01 pcTW-1p5 mTW-5"><div class="Rtdwrap">店別</div></li>
+                <li class="mW01 pcTW-1 mTW-4"><div class="Rtdwrap  rTxtCenter">場次日期</div></li>
+                <li class="mNo2 pcTW-1p5"><div class="Rtdwrap">場次時間</div></li>
+                <li class="mNo2 pcTW-2p5"><div class="Rtdwrap">地址</div></li>
+                <li class="mNo2 pcTW-1p5"><div class="Rtdwrap">電話</div></li>
+                <li class="mNo2 pcTW-1"><div class="Rtdwrap">可報名人數</div></li>
+                <li class="mNo2 pcTW-1"><div class="Rtdwrap"></div></li>
+            </ul><!--tableItem end-->
+            <ul>
+                <input type="checkbox" id="odsList01" name="rwdList" class="rwdCheck"><label for="odsList01" class="rwdLabel"></label>
+                <li class="mW01 pcTW-1p5 mTW-5"><div class="Rtdwrap">汀洲店</div></li>
+                <li class="mW01 pcTW-1 mTW-4"><div class="Rtdwrap  rTxtCenter">05/05(六)</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">時間</b>14:00~16:00</div></li>
+                <li class="mBreak pcTW-2p5">
+                	<div class="Rtdwrap rTxtLeft map">
+                    	<b class="pcNo">地址</b><a href="map.html" target="_blank" class="oaAlink">台北市汀州路三段184號<img src="images/time_map.gif" width="100%"></a>
+                    </div>
+                </li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">電話</b>02-23691245</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap"><b class="pcNo">可報名人數</b>999人</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap rwdChangeBtn"><a href="signup.html">我要報名</a></div></li>
+            </ul>
+            <ul>
+                <input type="checkbox" id="odsList02" name="rwdList" class="rwdCheck"><label for="odsList02" class="rwdLabel"></label>
+                <li class="mW01 pcTW-1p5 mTW-5"><div class="Rtdwrap">國醫中心加盟店</div></li>
+                <li class="mW01 pcTW-1 mTW-4"><div class="Rtdwrap  rTxtCenter">05/05(六)</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">時間</b>14:00~16:00</div></li>
+                <li class="mBreak pcTW-2p5">
+                	<div class="Rtdwrap rTxtLeft map">
+                    	<b class="pcNo">地址</b><a href="map.html" target="_blank" class="oaAlink">台北市天母西路3號之32-52號<img src="images/time_map.gif" width="100%"></a>
+                    </div>
+                </li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">電話</b>02-23691245</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap"><b class="pcNo">可報名人數</b>999人</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap rwdChangeBtn noMember"><a href="">已額滿</a></div></li>
+            </ul>
+            <ul>
+                <input type="checkbox" id="odsList03" name="rwdList" class="rwdCheck"><label for="odsList03" class="rwdLabel"></label>
+                <li class="mW01 pcTW-1p5 mTW-5"><div class="Rtdwrap">新店店</div></li>
+                <li class="mW01 pcTW-1 mTW-4"><div class="Rtdwrap  rTxtCenter">05/05(六)</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">時間</b>14:00~16:00</div></li>
+                <li class="mBreak pcTW-2p5">
+                	<div class="Rtdwrap rTxtLeft map">
+                    	<b class="pcNo">地址</b><a href="map.html" target="_blank" class="oaAlink">高雄市前金區成功一路266-1號B2(漢神百貨)<img src="images/time_map.gif" width="100%"></a>
+                    </div>
+                </li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">電話</b>02-23691245</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap"><b class="pcNo">可報名人數</b>999人</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap rwdChangeBtn"><a href="signup.html">我要報名</a></div></li>
+            </ul>
+            <ul>
+                <input type="checkbox" id="odsList04" name="rwdList" class="rwdCheck"><label for="odsList04" class="rwdLabel"></label>
+                <li class="mW01 pcTW-1p5 mTW-5"><div class="Rtdwrap">台中秀泰店</div></li>
+                <li class="mW01 pcTW-1 mTW-4"><div class="Rtdwrap  rTxtCenter">05/05(六)</div></li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">時間</b>14:00~16:00</div></li>
+                <li class="mBreak pcTW-2p5">
+                	<div class="Rtdwrap rTxtLeft map">
+                    	<b class="pcNo">地址</b><a href="map.html" target="_blank" class="oaAlink">台北市中正區中山南路7號B1F(微風台大醫院美食街)<img src="images/time_map.gif" width="100%"></a>
+                    </div>
+                </li>
+                <li class="mBreak pcTW-1p5"><div class="Rtdwrap"><b class="pcNo">電話</b>02-23691245</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap"><b class="pcNo">可報名人數</b>999人</div></li>
+                <li class="mBreak pcTW-1"><div class="Rtdwrap rwdChangeBtn"><a href="signup.html">我要報名</a></div></li>
+            </ul>
+        </div><!--rwdTable end-->
+        <p class="InfoTxt">*現場報名請先加入<a>ｉ閱讀會員</a>再至各店報名</p>
+    </section><!--section end-->
+</article><!--content end-->
+
+
+<!--goTop鈕-->
+<p class="goTop"></p>
+<p class="goHome"><a href="ks.html"><img src="images/time_homebtn.png" width="100%"></a></p>
+<script language="javascript">
+$('.goTop').click(function(){
+	$('html,body').animate({scrollTop:$('#goTop').offset().top}, 800);
+});
+</script>
+
+</body>
+</html>
