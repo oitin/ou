@@ -39,7 +39,7 @@ header{ overflow: hidden; display: grid; grid-template-columns: repeat(3,1fr); g
 .infoBox p{ margin-bottom: 15px; text-indent: -17px;}
 .infoBox p:last-child{ margin-top: 50px; text-align: right;}
 .infoBox p i{ margin-right: 15px; font-size: 1.5rem; vertical-align: text-bottom; line-height: 1.5;}
-.copyEmail{ padding: 3px 8px; font-size: 1.25rem; border: 0; background-color: #bdad00 ; color: #fff; border-radius: 3px; outline: none; cursor: pointer;}
+.copyEmail{ padding: 3px 8px; font-size: 1.25rem; border: 0; background-color: #bdad00 ; color: #fff; border-radius: 3px; outline: none; cursor: pointer; font-family: 微軟正黑體;}
 .copyEmail:hover{ background-color: #a49600;}
 
 /*--experience-------------------------*/
