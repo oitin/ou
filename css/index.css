@@ -18,7 +18,7 @@ nav a{ display: inline-block; margin: 25px 10px 25px 25px; font-size: 1.6rem; co
 /*--header-------------------------*/
 .metaPic{ display: none;}
 header{ overflow: hidden; display: grid; grid-template-columns: repeat(3,1fr); grid-gap: 2%;}
-.bgColor1{ position: relative; width: 980px; margin-top: 50px; padding-top: 6%; padding-bottom: 5%;
+.bgColor1{ position: relative; width: 980px; margin-top: 50px; padding-top: 6%; padding-bottom: 7%;
  background: -webkit-linear-gradient(22deg, rgb(251, 248, 231), rgb(216, 243, 249));
  background: linear-gradient(22deg, rgb(251, 248, 231), rgb(216, 243, 249));}
 .bgColor2{ height: 75%;
@@ -30,9 +30,9 @@ header{ overflow: hidden; display: grid; grid-template-columns: repeat(3,1fr); g
 .nameBox h1 b{ font-size: 37rem; vertical-align: text-top;}
 .nameBox span{ position: absolute; top: 210px; right: 0; color:#a4a4a4; font-size: 3rem; font-weight: normal; letter-spacing: 16px; font-family: "微軟正黑體";}
 
-.picBorder{ position: absolute; top: 38%; left: -9.7%; width: 37.5%; display: table; overflow: hidden; border-radius: 50%; border: #dbd16c 2px solid;}
+.picBorder{ position: absolute; top: 42.9%; left: -6.2%; width: 31.8%; display: table; overflow: hidden; border-radius: 50%; border: #dbd16c 2px solid;}
 .picBorder img{ display: block;}
-.picBox{ position: relative; z-index: 1; width: 35%; margin-top: -17%; margin-left: -8%; display: table; overflow: hidden; border-radius: 50%;}
+.picBox{ position: relative; z-index: 1; width: 30%; margin-top: -14%; margin-left: -5%; display: table; overflow: hidden; border-radius: 50%;}
 .picBox img{ display: block;}
 
 .infoBox{ position: absolute; top: 69%; left: 35%; width: 60%;  font-size: 2rem; color: #3c736c; font-weight: bold; line-height: 1.4;}
@@ -60,6 +60,16 @@ header{ overflow: hidden; display: grid; grid-template-columns: repeat(3,1fr); g
 .expDetail p:last-child:before,.expDetail p:last-child:after{ content: ""; position: absolute; top: 10px; left: 10px; background-color: #d6c749;}
 .expDetail p:last-child:before{ width: 25px; height: 7px;}
 .expDetail p:last-child:after{ width: 7px; height: 25px;}
+
+/*--intro-------------------------*/
+.introBox{ padding: 30px 4% 0 4%; margin-top: -30px; font-size: 1.65rem; line-height: 1.7;}
+.introCon{ display: none; padding: 40px 5%; margin-bottom: 20px; background-color: #fff; box-shadow: rgba(80,60,150,0.07) 3px 3px 3px; border-radius: 5px;}
+.introBox h6{ margin-bottom: 10px; font-size: 2rem; font-weight: bold; color: #95890c;}
+.introBox b{ margin-bottom: 8px; display: block; font-weight: bold; color: #333; font-size: 1.55rem;}
+.introBox b span{ color: #ccc;}
+.introBox p{ margin-bottom: 30px; color: #333;}
+.introBox p:last-child{ margin-bottom: 0;}
+.introBtn{ display: block; width: 30%; margin: 0 auto; padding: 10px 2%; border: 0; background-color: #bdad00; font-size: 1.9rem; color: #fff; font-weight: bold; text-shadow: rgba(0,0,0,0.3)1px 1px 5px; text-align: center; border-radius: 100px; outline: none; cursor: pointer;}
 
 /*--skill-------------------------*/
 .skillBox{ padding-bottom: 30px;
@@ -106,13 +116,13 @@ footer{ width: 300px; margin: 50px auto 0 auto; padding-top: 25px; color: #8e8e8
     .navBox{ width: 750px;}
 
     /*--header-------------------------*/
-    .bgColor1{ width: 735px; padding-bottom: 8%;}
+    .bgColor1{ width: 735px; padding-bottom: 11%;}
 
     .nameBox h1{ font-size: 14rem;}
     .nameBox h1 b{ font-size: 32rem;}
     .nameBox span{ top: 190px; font-size: 2.4rem;}
 
-    .picBorder{ top: 40.5%;}
+    .picBorder{ top: 44.9%;}
     .infoBox{ left: 36%; font-size: 1.8rem;}
 
     /*--experience-------------------------*/
@@ -137,7 +147,7 @@ footer{ width: 300px; margin: 50px auto 0 auto; padding-top: 25px; color: #8e8e8
     
     /*--nav-------------------------*/
     .navBox{ width: 100%;}
-    nav a{ width: 25%; margin: 0; padding: 17px 0; text-align: center;}
+    nav a{ width: 20%; margin: 0; padding: 17px 0; text-align: center;}
 
     /*--header-------------------------*/
     header{ grid-template-columns: repeat(1,1fr); grid-gap: 0;}
@@ -147,7 +157,7 @@ footer{ width: 300px; margin: 50px auto 0 auto; padding-top: 25px; color: #8e8e8
     .nameBox h1 b{ font-size: 13rem;}
     .nameBox span { top: 110px; font-size: 1.4rem; letter-spacing: 9px;}
 
-    .picBorder{ top: 28%;}
+    .picBorder{ width: 38%; top: 30%;}
     .picBox{ width: 60%; max-width: 230px; margin: 10px auto;}
 
     .infoBox{ position: inherit; top: 0; left: 0; display: table; width: auto; margin: 20px auto 0 auto; padding: 0 8% 0 18%; font-size: 1.7rem;}
@@ -162,6 +172,11 @@ footer{ width: 300px; margin: 50px auto 0 auto; padding-top: 25px; color: #8e8e8
     .expDetail p:last-child{ width: 86%; padding: 10px 7%; margin-top: 10px; font-weight: bold; background-color: #f5f5f5; border-radius: 5px; border-left: 0;}
 
     .expDetail p:last-child:before,.expDetail p:last-child:after{ display: none;}
+
+    /*--intro-------------------------*/
+    .introBox{ padding: 8px 4%; margin-top: 0;} 
+    .introCon{ padding: 25px 9%;}
+    .introBtn{  width: 60%; font-size: 1.9rem;}
 
     /*--skill-------------------------*/
    .skillL { width: 100%;}
