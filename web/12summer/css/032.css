@@ -107,7 +107,7 @@
 	.area05{ background-size:200%;}
 	.a05BG{ background-size:120%; background-position-y:50%; background-position-x:center; background-repeat:no-repeat; background-attachment:fixed;}
 	
-	.area06{ background-size:250%;}
+	.area06{ background-size:250%; background-color: #52d6fa; background-attachment: inherit;}
 	.a06BG{ background-size:150%;}
 	.phoneCon{ background-size:contain; padding:3% 4%;}
 	.phoneSay{ height:70px; width:auto;}
