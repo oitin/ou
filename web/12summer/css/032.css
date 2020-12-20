@@ -64,7 +64,7 @@
 .a05Pic02{ width:57%;}
 .a05Pic03{ width:85%; margin:0 auto; float:none !important;}
 
-.area06{ background-image:url(../images/bg_06.jpg); background-position:top center; background-repeat:no-repeat; overflow:hidden; background-attachment:fixed;}
+.area06{ background-color: #52d6fa; background-image:url(../images/bg_06.jpg); background-position:top center; background-repeat:no-repeat; overflow:hidden; background-attachment:fixed;}
 .a06BG{ background-image:url(../images/bg_deco_06.png); background-position-y:50%; background-position-x:center; background-repeat:no-repeat; background-attachment:fixed;}
 .area06 .title{ margin:0 auto; padding-top:80px;}
 .area06 .title img{ height:auto; display:inline-block;}
