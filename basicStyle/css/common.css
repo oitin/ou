@@ -28,7 +28,7 @@ body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif
     --txt-2xl: 2.4rem;
 }
 
-input,button,textarea,select{ box-sizing:border-box;}
+input,button,textarea,select{ box-sizing:border-box; -ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
 input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none; max-width: 100%; font-size: var(--txt-b);}
 /*inputCheckStyle核取方塊--------------- */
 .inputCheckStyle{ display: flex; font-size: var(--txt-m); cursor: pointer; user-select: none;}
