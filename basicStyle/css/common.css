@@ -75,7 +75,7 @@ input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none;
 .selectStyle:hover,.selectStyle:focus{ border: var(--red) 1px solid;}
 
 /*btnStyle按鈕---------------*/
-.btnArea{ display: flex;}
+.btnArea{ width: 100%; display: flex;}
 .btnStyle{ flex:1; display: inline-block; border: 0; outline: none; vertical-align: top; line-height: 1; cursor: pointer;
  /*min-width: 100px;*/ height: 40px; margin-right: 10px; padding: 11px 15px; color: #fff; font-size: var(--txt-m); text-align: center; text-decoration: none; 
  border-radius: 3px; box-shadow: #ccc 1px 1px 2px, inset rgba(255,255,255,0.5) 1px 2px 3px; vertical-align: middle;}
@@ -156,4 +156,7 @@ a.btnStyle{ height: 36px;}
 }
 @media screen and (max-width:767px) {
     input,select{ outline: none;}
+    
+    /*btnStyle按鈕---------------*/
+    a.btnStyle{ height: 40px;}
 }
