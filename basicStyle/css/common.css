@@ -70,7 +70,7 @@ input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none;
 
 
 /*selectStyle下拉選項---------------*/
-.selectStyle{ position: relative; height: 40px; padding: 4px 40px 4px 10px; border: var(--grayWhite) 1px solid; border-radius: 2px; outline: none; cursor: pointer;
+.selectStyle{ font-size: 1.6rem; position: relative; height: 40px; padding: 4px 40px 4px 10px; border: var(--grayWhite) 1px solid; border-radius: 2px; outline: none; cursor: pointer;
  background: #fff url(../images/icon-ar-down.png) no-repeat; background-size: 30px; background-position: right; background-position-y: center; transition-property: border; transition-duration: 0.4s;}
 .selectStyle:hover,.selectStyle:focus{ border: var(--red) 1px solid;}
 
