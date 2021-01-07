@@ -80,7 +80,7 @@ input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none;
  /*min-width: 100px;*/ height: 40px; margin-right: 10px; padding: 11px 15px; color: #fff; font-size: var(--txt-m); text-align: center; text-decoration: none; 
  border-radius: 3px; box-shadow: #ccc 1px 1px 2px, inset rgba(255,255,255,0.5) 1px 2px 3px; vertical-align: middle;}
 .btnStyle:hover{ box-shadow: #ccc 1px 1px 2px, inset rgba(0, 0, 0, 0.2) 3px 2px 10px;}
-/* a.btnStyle{ padding: 7px 15px;} */
+a.btnStyle{ height: 36px;}
 
 /*red*/
 .btnStyle.red{ background-color: var(--red); border-bottom: var(--redDeep) 4px solid;}
