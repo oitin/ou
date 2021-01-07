@@ -1,0 +1,158 @@
+@charset "utf-8";
+html{ font-size: 62.5%;}
+body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif; line-height: 1;}
+
+:root { 
+    --redLight: #ee0000;
+    --red: #c00;
+    --redDeep: #940000;
+    --blueLight: #00a0d0;
+    --blue: #0c7ac9;
+    --blueDeep: #0c5b89;
+    --greenLight: #659508;
+    --green: #17795e;
+    --gold: #a88c00;
+    --grayLight: #aaa;
+    --gray: #6f6f6f;
+    --grayDeep: #333;
+    --grayWhite: #ccc;
+    --grayDis: #ededed;
+
+    --txt-2xs: 1.2rem;
+    --txt-xs: 1.3rem;
+    --txt-s: 1.4rem;
+    --txt-m: 1.5rem;
+    --txt-b: 1.6rem;
+    --txt-l: 1.8rem;
+    --txt-xl: 2rem;
+    --txt-2xl: 2.4rem;
+}
+
+input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none; font-size: var(--txt-b);}
+/*inputCheckStyle核取方塊--------------- */
+.inputCheckStyle{ display: flex; font-size: var(--txt-m); cursor: pointer; user-select: none;}
+
+.inputCheckStyle p{ display: inline; line-height: 1.6;}
+.inputCheck:checked ~ p{ color: var(--red);}
+
+.inputCheck{ opacity: 0; position: absolute;}
+.inputCheck[type="checkbox"] + span,.inputCheck[type="radio"] + span{top: -1px; display: table; width: 24px; height: 24px; margin-right: 5px; background-color: #ffffff; border: var(--grayLight) 1px solid; vertical-align: middle; position: relative;}
+.inputCheck[type="checkbox"]:checked + span,.inputCheck[type="radio"]:checked + span{ border: var(--red) 1px solid;}
+
+.inputCheck[type="checkbox"] + span{ border-radius: 2px; }
+.inputCheck[type="checkbox"]:checked + span{ background-color: var(--red); }
+.inputCheck[type="checkbox"]:checked + span:after{ content: " "; display: block; width: 5px; height: 9px; margin: 0 auto; border: solid #fff; border-width: 0 3px 3px 0; transform: rotate(45deg); position: absolute; left: 0; right: 0; bottom: 7px; }
+
+.inputCheck[type="radio"] + span{  border-radius: 15px;}
+.inputCheck[type="radio"]:checked + span{ background-color: #ffffff; }
+.inputCheck[type="radio"]:checked + span:after{ content: " "; display: block; width: 10px; height: 10px; margin: auto; background-color: var(--red); border-radius: 100px; position: absolute; top: 0; bottom: 0; right: 0; left: 0; }
+
+/*input文字輸入框---------------*/
+.inputTextStyle{ height: 40px; padding: 0 10px; border: var(--grayWhite) 1px solid;  border-radius: 3px; outline: none; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; transition-property: border; transition-duration: 0.4s;}
+.inputTextStyle:hover,.inputTextStyle:focus{ border-color: var(--red);}
+
+/*input數量輸入框---------------*/
+.inputTextNum{ display:flex; align-content: center;}
+.inputTextNum span ~ .inputTextStyle{ width: 80px; border: var(--red) 2px solid; border-radius: 0; text-align: center;}
+.inputTextNum span ~ .inputTextStyle:focus{ border-color: var(--redDeep);}
+.inputTextNum span{ position: relative; width: 40px; background-color: var(--red); cursor: pointer;}
+.inputTextNum span:first-child{ border-radius: 3px 0 0 3px;}
+.inputTextNum span:last-child{ border-radius: 0  3px  3px 0;}
+.inputTextNum span:hover{ background-color: var(--redLight);}
+.inputTextNum span:active{ background-color: var(--redDeep);}
+
+.inputTextNum span:first-child::before,
+.inputTextNum span:last-child::before,
+.inputTextNum span:last-child::after{ content:""; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; background-color: #fff; border-radius: 5px;}
+.inputTextNum span:last-child::before{ width: 2px; height: 16px;}
+.inputTextNum span:first-child::before,
+.inputTextNum span:last-child::after{ width: 16px; height: 2px;}
+
+
+/*selectStyle下拉選項---------------*/
+.selectStyle{ position: relative; height: 40px; padding: 4px 40px 4px 10px; border: var(--grayWhite) 1px solid; border-radius: 2px; outline: none; cursor: pointer;
+ background: #fff url(../images/icon-ar-down.png) no-repeat; background-size: 30px; background-position: right; background-position-y: center; transition-property: border; transition-duration: 0.4s;}
+.selectStyle:hover,.selectStyle:focus{ border: var(--red) 1px solid;}
+
+/*btnStyle按鈕---------------*/
+.btnArea{ display: flex;}
+.btnStyle{ display: inline-block; border: 0; outline: none; vertical-align: top; line-height: 1; cursor: pointer;
+ min-width: 100px; margin-right: 10px; padding: 11px 15px; color: #fff; font-size: var(--txt-m); text-align: center; text-decoration: none; 
+ border-radius: 3px; box-shadow: #ccc 1px 1px 2px, inset rgba(255,255,255,0.5) 1px 2px 3px;}
+.btnStyle:hover{ box-shadow: #ccc 1px 1px 2px, inset rgba(0, 0, 0, 0.2) 3px 2px 10px;}
+
+/*red*/
+.btnStyle.red{ background-color: var(--red); border-bottom: var(--redDeep) 4px solid;}
+.btnStyle.red:hover{ background-color: var(--redLight);}
+.btnStyle.red:active{ background-color: var(--red);}
+
+.btnStyle.redBor{ background-color: #fff; border: var(--red) 1px solid; border-bottom: var(--red) 4px solid; color: var(--red);}
+.btnStyle.redBor:hover{ border: var(--redDeep) 1px solid; border-bottom: var(--redDeep) 4px solid;}
+.btnStyle.redBor:active{ border: var(--redDeep) 1px solid; border-bottom: var(--redDeep) 4px solid;}
+
+/*blue*/
+.btnStyle.blue{ background-color: var(--blue); border-bottom: var(--blueDeep) 4px solid;}
+.btnStyle.blue:hover{ background-color: var(--blueLight);}
+.btnStyle.blue:active{ background-color: var(--blue);}
+
+/*disabled*/
+.btnStyle.disabled{ background-color: var(--grayLight); border-bottom: #8d8d8d 4px solid; cursor: default;}
+.btnStyle.disabled:hover{ box-shadow: #ccc 1px 1px 2px, inset rgba(255,255,255,0.5) 1px 2px 3px;}
+
+/*disabled---------------*/
+.inputCheckStyle.disabled{ color: var(--gray); cursor: default;}
+.inputCheckStyle.disabled span{ background-color: var(--grayDis) !important;}
+
+.inputTextStyle:disabled,.selectStyle:disabled{ background-color: var(--grayDis); color: #000; cursor: default;}
+.inputTextStyle:disabled:hover,.selectStyle:disabled:hover{ border: var(--grayWhite) 1px solid;}
+
+.inputTextNum.disabled span{ background-color: var(--grayWhite); cursor: default;}
+.inputTextNum.disabled .inputTextStyle{  border: var(--grayWhite) 2px solid;}
+
+/*delete---------------*/
+.delete{ position: relative; display:block; width: 30px; height: 30px; margin: auto 0; background-color: #ececec; border-radius: 2px; transition-property: background-color; transition-duration: 0.6s;}
+.delete:before, .delete:after{ content: ""; position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto; width: 2px; height: 20px; background-color: #ffffff; border-radius: 15px;}
+.delete:before{ transform: rotate(-45deg);}
+.delete:after{ transform: rotate(45deg);}
+.delete:hover{ background-color: #d20f16;}
+
+/*arrowBor---------------*/
+.arrowBor{ display: block; position: relative; width: 30px; height: 30px; background-color: #ececec; border-radius: 2px; transition-property: background-color; transition-duration: 0.6s;}
+.arrowBor:after{ content: ""; display: block; position: absolute; left: 8px; top: 6px; width: 9px; height: 9px; border: solid #fff; border-width: 0 3px 3px 0; border-radius: 2px; transform: rotate(45deg);}
+.arrowBor:hover{ background-color: #d20f16;}
+
+/*arrow---------------*/
+.arrow{ border-bottom: #e65050 12px solid; border-left: transparent 8px solid; border-right: transparent 8px solid;}
+
+/* font Color--------------- */
+/* .txt-redLight{ color: #ee0000;} */      /*必填 注意 警告*/
+/* .txt-red{ color: #c00;} */              /*重要訊息*/
+/* .txt-redDeep{ color: #940000;}  */
+/* .txt-blueLight{ color: #00a0d0;}  */
+/* .txt-blue{ color: #0c7ac9;} */          /*EZ OK 輕鬆  #2070de(4.73)偏紫*/
+/* .txt-blueDeep{ color: #0c5b89;}  */
+/* .txt-greenLight{ color: #659508;}  */
+/* .txt-green{ color: #17795e;} */         /*安全 可行   #07845d(4.7)*/
+/* .bg-green{ color: #17795e;}  */
+/* .txt-gold{ color: #a88c00;}  */
+/* .txt-grayLight{ color: #aaa;}  */       /*不重要*/
+/* .txt-gray{ color: #6f6f6f;} */          /*次要*/
+/* .txt-grayDeep{ color: #333;} */
+
+/* font Size--------------- */
+/* .txt-2xs{ font-size: 1.2rem;}
+.txt-xs{ font-size: 1.3rem;}
+.txt-s{ font-size: 1.4rem;}
+.txt-m{ font-size: 1.5rem;}
+.txt-b{ font-size: 1.6rem;}
+.txt-l{ font-size: 1.8rem;}
+.txt-xl{ font-size: 2rem;}
+.txt-2xl{ font-size: 2.4rem;}
+
+.fonHeavy{ font-weight: bold;} */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    
+}
+@media screen and (max-width:767px) {
+    input,select{ outline: none;}
+}
