@@ -28,7 +28,7 @@ body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif
     --txt-2xl: 2.4rem;
 }
 
-input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none; font-size: var(--txt-b);}
+input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none; max-width: 100%; font-size: var(--txt-b);}
 /*inputCheckStyle核取方塊--------------- */
 .inputCheckStyle{ display: flex; font-size: var(--txt-m); cursor: pointer; user-select: none;}
 
@@ -70,7 +70,7 @@ input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none;
 
 
 /*selectStyle下拉選項---------------*/
-.selectStyle{ font-size: 1.6rem; position: relative; height: 40px; padding: 4px 40px 4px 10px; border: var(--grayWhite) 1px solid; border-radius: 2px; outline: none; cursor: pointer;
+.selectStyle{ position: relative; height: 40px; padding: 4px 40px 4px 10px; border: var(--grayWhite) 1px solid; border-radius: 2px; outline: none; cursor: pointer;
  background: #fff url(../images/icon-ar-down.png) no-repeat; background-size: 30px; background-position: right; background-position-y: center; transition-property: border; transition-duration: 0.4s;}
 .selectStyle:hover,.selectStyle:focus{ border: var(--red) 1px solid;}
 
