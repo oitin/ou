@@ -28,7 +28,7 @@ body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif
     --txt-2xl: 2.4rem;
 }
 
-input,button,textarea,select{ box-sizing:border-box; -ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+input,button,textarea,select{ box-sizing:border-box;}
 input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none; max-width: 100%; font-size: var(--txt-b);}
 /*inputCheckStyle核取方塊--------------- */
 .inputCheckStyle{ display: flex; font-size: var(--txt-m); cursor: pointer; user-select: none;}
@@ -49,7 +49,7 @@ input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none;
 .inputCheck[type="radio"]:checked + span:after{ content: " "; display: block; width: 10px; height: 10px; margin: auto; background-color: var(--red); border-radius: 100px; position: absolute; top: 0; bottom: 0; right: 0; left: 0; }
 
 /*input文字輸入框---------------*/
-.inputTextStyle{ height: 40px; padding: 0 10px; border: var(--grayWhite) 1px solid;  border-radius: 3px; outline: none; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; transition-property: border; transition-duration: 0.4s;}
+.inputTextStyle{ height: 45px; padding: 0 10px; border: var(--grayWhite) 1px solid;  border-radius: 3px; outline: none; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; transition-property: border; transition-duration: 0.4s;}
 .inputTextStyle:hover,.inputTextStyle:focus{ border-color: var(--red);}
 
 /*input數量輸入框---------------*/
@@ -71,14 +71,14 @@ input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none;
 
 
 /*selectStyle下拉選項---------------*/
-.selectStyle{ position: relative; height: 40px; padding: 4px 40px 4px 10px; border: var(--grayWhite) 1px solid; border-radius: 2px; outline: none; cursor: pointer;
+.selectStyle{ position: relative; height: 45px; padding: 4px 40px 4px 10px; border: var(--grayWhite) 1px solid; border-radius: 2px; outline: none; cursor: pointer;
  background: #fff url(../images/icon-ar-down.png) no-repeat; background-size: 30px; background-position: right; background-position-y: center; transition-property: border; transition-duration: 0.4s;}
 .selectStyle:hover,.selectStyle:focus{ border: var(--red) 1px solid;}
 
 /*btnStyle按鈕---------------*/
 .btnArea{ width: 100%; display: flex;}
 .btnStyle{ flex:1; display: inline-block; border: 0; outline: none; vertical-align: top; line-height: 1; cursor: pointer;
- /*min-width: 100px;*/ height:40px; margin-right: 10px; padding: 11px 15px; color: #fff; font-size: var(--txt-m); text-align: center; text-decoration: none; 
+ /*min-width: 100px;*/ height: 45px; margin-right: 10px; padding: 15px; color: #fff; font-size: var(--txt-m); text-align: center; text-decoration: none; 
  border-radius: 3px; box-shadow: #ccc 1px 1px 2px, inset rgba(255,255,255,0.5) 1px 2px 3px; /*vertical-align: middle;*/}
 .btnStyle:hover{ box-shadow: #ccc 1px 1px 2px, inset rgba(0, 0, 0, 0.2) 3px 2px 10px;}
 
