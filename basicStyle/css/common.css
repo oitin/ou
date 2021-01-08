@@ -6,7 +6,7 @@ body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif
 .wrapper{ width: 100%; min-height: 100%; background-color: #272729; position: relative;}
 
 /*--header------------------------------*/
-.header{ display: flex; height: 56px; padding: 0 10px; background-color: var(--headerNav);}
+.header{ position: fixed; width: 100%; top: 0; display: flex; height: 56px; padding: 0 10px; background-color: var(--headerNav);}
 /*headerStyle1----*/
 .headerStyle1{ align-items: flex-end;}
 .headerMainTabs{ display: flex; flex:1; padding-right: 15px;}
@@ -40,7 +40,7 @@ nav{ position: fixed; bottom: 0; width: 100%;}
 .navList li img{ display: block; width: 45%; margin: 0 auto 5px auto;}
 
 /*--popPage------------------------------*/
-.popPage{ position: absolute; top: 0; width: 100%; z-index: 1;}
+.popPage{ position: fixed; top: 0; width: 100%; z-index: 1;}
 
 :root { 
     --brown: #976929;
@@ -191,6 +191,7 @@ input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none;
 
     .wrapper{ width: 767px; margin:0 auto;}
 
+    .header{ width: 767px;}
     .headerMainTabs li:hover,.headerSecTab li:hover,.navList li a:hover{ background-color: var(--headerNavHover);}
     .headerMainTabs li.click:hover,.headerSecTab li.click:hover,.navList li a.click:hover{ background-color: var(--headerNavClick);}
     /*--nav------------------------------*/
