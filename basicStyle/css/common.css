@@ -13,10 +13,10 @@ body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif
 .headerMainTabs li{ width: 100%; padding: 12px 9px; margin-right: 10px; color: #fff; font-size: var(--txt-l); text-align: center; background-color: var(--headerTab); border-radius: 5px 5px 0 0; cursor: pointer;}
 .headerMainTabs li.click,.headerSecTab li.click,.navList li a.click{ background-color: var(--headerNavClick);}
 
-.headerStyle1 .hIcon,
-.headerStyle2 .hIcon{ display: block; width: 36px; padding: 14px 5px; margin-right: 10px;}
-.headerStyle1 .hIcon:last-child,
-.headerStyle2 .hIcon:last-child{ margin-right: 5px;}
+.headerStyle1 .headerBtn .hIcon,
+.headerStyle2 .headerBtn .hIcon{ display: block; width: 36px; padding: 14px 5px; margin-right: 10px;}
+.headerStyle1 .headerBtn:last-child .hIcon,
+.headerStyle2 .headerBtn:last-child .hIcon:last-child{ margin-right: 0;}
 
 /*headerStyle2----*/
 .headerStyle2{ align-items: center; position: relative;}
