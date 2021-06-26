@@ -38,7 +38,7 @@ body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif
 .hIcon.iconPrev, .hIcon.iconNext{ width: 40px; height: 56px;}
 
 /*--scrollTabs------------------------------*/
-.scrollTabs{ overflow: hidden; overflow-x: scroll; white-space: nowrap; padding:14px 0 14px 15px; border-bottom: #595959 1px solid; font-size: var(--txt-b);}
+.scrollTabs{ overflow: hidden; overflow-x: scroll; white-space: nowrap; -webkit-overflow-scrolling: touch; padding:14px 0 14px 15px; border-bottom: #595959 1px solid; font-size: var(--txt-b); }
 .scrollTabs li{ display: inline; margin-right: 15px;}
 .scrollTabs li a{ color: #fff; text-decoration: none;}
 
@@ -63,10 +63,10 @@ body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif
 .immedInfo{ /*position: fixed; bottom: 126px;*/ display: flex; grid-gap: 6px; width: 100%; max-width: 765px; padding: 5px 2%; color: #fff; font-size: var(--txt-xs); background-color: #000;}
 .immed01{ width: 104px; padding: 4px; border-radius: 80px; text-align: center;}
 .immed02{ position: relative; align-self: center; width: calc(100% - 140px); margin: 0 15px;}
-.immed02::before, .immed02::after{ position: absolute; top: 0;}
-.immed02::before{ content: "◀"; left: -15px;}
-.immed02::after{ content: "▶"; right: -15px;}
-.immed02 p{ overflow: hidden; overflow-x: scroll; white-space: nowrap;}
+.immed02::before, .immed02::after{ position: absolute; top: 0; border-top: transparent 6px solid;  border-bottom: transparent 6px solid;}
+.immed02::before{ content: ""; left: -15px; border-left: 0;  border-right: #fff 10px solid;}
+.immed02::after{ content: ""; right: -15px; border-right: 0;  border-left: #fff 10px solid;}
+.immed02 p{ overflow: hidden; overflow-x: scroll; white-space: nowrap; -webkit-overflow-scrolling: touch;}
 
 /*adBox----*/
 .adBox01{ /*position: fixed; bottom: 68px;*/ width: 100%; max-width: 767px;}
@@ -181,8 +181,8 @@ input,select{ appearance: none; -webkit-appearance: none; -moz-appearance: none;
 .selectStyle:hover,.selectStyle:focus{ border-color: var(--red);}
 
 /*btnStyle按鈕---------------*/
-.btnArea{ width: 80%; display: flex; margin: 10px auto; grid-gap: 10px;}
-.btnStyle{ display: flex; flex:1; justify-content: center; align-items: center; height: 50px; border: 0; border-bottom: 4px solid; outline: none;
+.btnArea{ width: 80%; display: flex; margin: 10px auto;}
+.btnStyle{ display: flex; flex:1; justify-content: center; align-items: center; height: 50px; margin: 0 5px; border: 0; border-bottom: 4px solid; outline: none;
  color: #fff; font-size: var(--txt-b); text-align: center; vertical-align: top; text-decoration: none; line-height: 1; border-radius: 3px; cursor: pointer;}
 
 /*red*/

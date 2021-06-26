@@ -8,14 +8,14 @@
 .stocks_04 .conFixed{ top: 55px;}
 .stocks_06 .conFixed{ top: 100px;}
 
-.stocks_01 .content{ padding-top: 210px; padding-bottom: 95px;}
-.stocks_02 .content{ padding-top: 170px; padding-bottom: 95px;}
+.stocks_01 .content{ padding-top: 200px; padding-bottom: 95px;}
+.stocks_02 .content{ padding-top: 160px; padding-bottom: 95px;}
 .stocks_04 .content{ padding-top: 100px; padding-bottom: 95px;}
 .stocks_05 .content{ padding-top: 55px; padding-bottom: 95px;}
-.stocks_06 .content{ padding-top: 215px; padding-bottom: 95px;}
+.stocks_06 .content{ padding-top: 205px; padding-bottom: 95px;}
 
 /*--conTabs列表頁籤------------------------------*/
-.conTabs{ display: flex; width: 90%; margin: 15px auto; background-color: #fff; font-size: var(--txt-m); text-align: center; border-radius: 5px; overflow: hidden;}
+.conTabs{ display: flex; width: 90%; margin: 10px auto; background-color: #fff; font-size: var(--txt-m); text-align: center; border-radius: 5px; overflow: hidden;}
 .conTabs li{ flex: 1; border-right: #c3c3c3 1px solid;}
 .conTabs li:last-child{ border-right: 0;}
 .conTabs li a{ display: flex; align-items: center; justify-content: center; height: 45px; text-decoration: none; color: var(--headerNav); font-weight: bold; line-height: 1.1;}
@@ -59,14 +59,14 @@
 .tbGreen.tbBg{ background-color: var(--tbGreenBg); color: #fff;}
 
 /*tbBtn列表功能鈕----*/
-.tbBtnBox{ position: absolute; width: 100%; height: 100%; -webkit-grid-gap: 20px; background-color: rgba(84,60,14,.95);}
-.tbBtn{ position: relative; display: block; width: 56px; padding: 15px 0; background-color: var(--brown); color: #fff; text-decoration: none; border-radius: 5px;}
+.tbBtnBox{ position: absolute; width: 100%; height: 100%; background-color: rgba(84,60,14,.95);}
+.tbBtn{ position: relative; display: block; width: 56px; margin: 0 10px; padding: 15px 0; background-color: var(--brown); color: #fff; text-decoration: none; border-radius: 5px;}
 .tbBtn::before{ content: ""; position: absolute; bottom: 3px; right: 0; left: 0; margin: 0 auto; width: 90%; height: 3px; background-color: var(--brownDeep); border-radius: 0 0 5px 5px;}
 .tbBtn.set::after{ content: ""; position: absolute; top: 8%; right: 8%; width: 4px; height: 4px; background-color: #fff; border-radius: 10px;}
 
 /*addBtn加入監控+自選鈕----*/
-.addBtnBox{ display: flex; justify-content: center; grid-gap: 15px; margin-top: 15px; padding-bottom: 15px;}
-.addBtnBox a{ position: relative; display: flex; align-items: center; padding:10px 15px 15px; color: #fff; font-size: var(--txt-b); text-decoration: none; border-radius: 5px;}
+.addBtnBox{ display: flex; justify-content: center; margin-top: 15px; padding-bottom: 15px;}
+.addBtnBox a{ position: relative; display: flex; align-items: center; margin: 0 8px; padding:10px 15px 15px; color: #fff; font-size: var(--txt-b); text-decoration: none; border-radius: 5px;}
 .addBtn01{ background-color: var(--brown);}
 .addBtn02{ background-color: var(--tbRedBg);}
 .addBtnBox a::before{ content: ""; position: absolute; bottom: 3px; right: 0; left: 0; margin: 0 auto; width: 95%; height: 3px; border-radius: 0 0 5px 5px;}
@@ -154,7 +154,7 @@
 .popTableList{ margin-top: 15px;}
 .popTableList > li{ display: flex; flex-wrap: wrap; align-items: center; width: 100%; min-height: 53px; padding: 0 15px; border-bottom: #595959 1px solid;}
 .popTableList > li:first-child{ border-top: #595959 1px solid;}
-.popTableList a{ padding: 10px 0;}
+.popTableList a{ padding: 15px 0;}
 .popListName{ flex: 1; /*align-self: center;*/ display: inline-block; font-size: var(--txt-b); color: #fff; text-decoration: none;}
 .popListIcons{ flex: 1; /*align-self: center;*/}
 .popListIcons .popListIcon{ float: right; width: 30px; margin-left: 20px;}
