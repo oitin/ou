@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<title>01_1選股</title>
+<meta name="title" content="">
+<meta name ="description" content ="">
+<meta name="keywords" content ="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="format-detection" content="telephone=no">
+
+<!--社群分享-->
+<meta property="og:title" content="標題" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.活動網址" />
+<meta property="og:image" content="https://活動圖片fbshare_970x510.jpg" />
+<meta property="og:description" content="描述" />
+<meta property="og:site_name" content="標題" />
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/pages.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper stocks_01"><!--用stocks_01來判斷fixed的高度-->
+
+    <div class="fixBox">
+        <header>
+            <!--01_1選股-->
+            <div class="header headerStyle1">
+                <ul class="headerMainTabs">
+                    <li class="click">多方</li>
+                    <li>空方</li>
+                    <li>自訂</li>
+                </ul>
+                <div class="headerBtn"><a href="#" class="hIcon"><img src="images/icon_search.png" width="100%" alt="搜尋"></a></div>
+                <div class="headerBtn"><a href="#" class="hIcon"><img src="images/icon_filter.png" width="100%" alt="篩選"></a></div>
+            </div>
+
+            <!--02_3搜尋-->
+            <!-- <div class="header headerStyle2">
+                <div class="headerBtn"><a href="#" class="hIcon iconPrev"></a></div>
+                <h2 class="headerTitle"><span>搜尋</span></h2>
+                <div class="headerBtn"><a href="#" class="hIcon"><img src="images/icon_search.png" width="100%" alt="搜尋"></a></div>
+            </div> -->
+
+            <!--04_1監控-->
+            <!-- <div class="header headerStyle1">
+                <ul class="headerMainTabs">
+                    <li class="click">個股監控</li>
+                    <li>策略監控</li>
+                </ul>
+                <div class="headerBtn"><a href="#" class="hIcon"><img src="images/icon_add.png" width="100%" alt="新增"></a></div>
+                <div class="headerBtn"><a href="#" class="hIcon"><img src="images/icon_set.png" width="100%" alt="設定"></a></div>
+            </div> -->
+
+            <!--05監控通知-->
+            <!-- <div class="header headerStyle2">
+                <h2 class="headerTitle"><span>監控通知</span></h2>
+                <div class="headerBtn"><a href="#" class="hIcon"><img src="images/icon_trash.png" width="100%" alt="全部刪除"></a></div>
+            </div> -->
+
+            <!--06_1自選股-->
+            <!--<div class="header headerStyle2">
+                <div class="headerBtn"><a href="#" class="hIcon"><img src="images/icon_set.png" width="100%" alt="設定"></a></div>
+                <h2 class="headerTitle"><span>自選股</span></h2>
+                <div class="headerBtn"><a href="#" class="hIcon"><img src="images/icon_add.png" width="100%" alt="新增"></a></div>
+            </div> -->
+        </header>
+
+        <!--條件篩選-->
+        <a href="#" class="filterInfo"><p>條件：內容內容內容</p><b href="#" class="iconNext"></b></a>
+
+        <!--自選股清單頁籤(左右捲)-->
+        <!-- <ul class="scrollTabs scrollStyleX">
+            <li><a href="">自選股清單1</a></li>
+            <li><a href="">自選股清單2</a></li>
+            <li><a href="">自選股清單3</a></li>
+            <li><a href="">自選股清單4</a></li>
+            <li><a href="">自選股清單5</a></li>
+            <li><a href="">自選股清單1</a></li>
+            <li><a href="">自選股清單2</a></li>
+            <li><a href="">自選股清單3</a></li>
+            <li><a href="">自選股清單4</a></li>
+            <li><a href="">自選股清單5</a></li>
+        </ul> -->
+    </div><!--fixBox end-->
+
+
+
+    <div class="content">
+        <main class="deepStyle">
+
+            <!--列表頁籤+列表項目(浮動)---------------------------------------------------------->
+            <div class="conFixed">
+                <!--列表頁籤-->
+                <ul class="conTabs">
+                    <li><a href="" class="click">價量</a></li>
+                    <li><a href="">籌碼<br>集中度</a></li>
+                    <li><a href="">法人<br>買賣超</a></li>
+                    <li><a href="">基本面</a></li>
+                    <li><a href="">Tag</a></li>
+                </ul>
+
+                <!--一般列表項目-->
+                <ul class="conItems">
+                    <li><a href="">監控<br>狀態</a></li>
+                    <li><a href="">標的<span class="itemArrow"></span></a></li><!--順序-->
+                    <li><a href="">單量<span class="itemArrow up"></span></a></li><!--順序:逆-->
+                    <li><a href="">漲跌幅<span class="itemArrow down"></span></a></li><!--順序:順-->
+                    <li><a href="">成交價<span class="itemArrow"></span></a></li>
+                    <li><a href="">總量<span class="itemArrow"></span></a></li>
+                </ul>
+            </div><!--conFixed end-->
+
+
+            <!--列表---------------------------------------------------------->
+            <div class="tableBox">
+                
+                <!--一般列表-->
+                <ul class="tableList">
+                    <li><div class="tbTag tbTag01">已監控</div></li>
+                    <li>0056<br>元大高股息</li>
+                    <li class="tbRed"><div class="tbCircle">783</div></li>
+                    <li class="tbRed tbBg">3.04</li>
+                    <li class="tbRed">13.55<span class="txtArrow">▲</span></li>
+                    <li>17404</li>
+                </ul>
+
+                <!--一般列表-->
+                <ul class="tableList">
+                    <li><div class="tbTag tbTag02">未監控</div></li>
+                    <li>0056<br>元大高股息</li>
+                    <li class="tbGreen"><div class="tbCircle">783</div></li>
+                    <li class="tbGreen">3.04</li>
+                    <li class="tbGreen">13.55<span class="txtArrow">▼</span></li>
+                    <li>17404</li>
+                    <!--列表功能鈕-->
+                    <li class="tbBtnBox">
+                        <a href="" class="tbBtn set">加入</a>
+                        <a href="" class="tbBtn">監控</a>
+                        <a href="" class="tbBtn set">筆記</a>
+                        <a href="" class="tbBtn">分享</a>
+                    </li>
+                </ul>
+
+                <!--一般列表-->
+                <ul class="tableList">
+                    <li><div class="tbTag tbTag01">已監控</div></li>
+                    <li>0056<br>國泰</li>
+                    <li>-</li>
+                    <li>-</li>
+                    <li>-</li>
+                    <li>17404</li>
+                </ul>
+
+                <!--一般列表-->
+                <ul class="tableList">
+                    <li><div class="tbTag tbTag02">未監控</div></li>
+                    <li>0056<br>元大高股息</li>
+                    <li class="tbGreen"><div class="tbCircle">783</div></li>
+                    <li class="tbGreen tbBg">3.04</li>
+                    <li class="tbGreen">13.55<span class="txtArrow">▼</span></li>
+                    <li>17404</li>
+                </ul>
+
+                <!--一般列表-->
+                <ul class="tableList">
+                    <li><div class="tbTag tbTag01">已監控</div></li>
+                    <li>0056<br>元大高股息</li>
+                    <li class="tbRed"><div class="tbCircle">783</div></li>
+                    <li class="tbRed tbBg">3.04</li>
+                    <li class="tbRed">13.55<span class="txtArrow">▲</span></li>
+                    <li>17404</li>
+                </ul>
+
+                <!--一般列表-->
+                <ul class="tableList">
+                    <li><div class="tbTag tbTag02">未監控</div></li>
+                    <li>0056<br>元大高股息</li>
+                    <li class="tbGreen"><div class="tbCircle">783</div></li>
+                    <li class="tbGreen">3.04</li>
+                    <li class="tbGreen">13.55<span class="txtArrow">▼</span></li>
+                    <li>17404</li>
+                </ul>
+
+                <!--一般列表-->
+                <ul class="tableList">
+                    <li><div class="tbTag tbTag01">已監控</div></li>
+                    <li>0056<br>國泰</li>
+                    <li>-</li>
+                    <li>-</li>
+                    <li>-</li>
+                    <li>17404</li>
+                </ul>
+
+                <!--一般列表-->
+                <ul class="tableList">
+                    <li><div class="tbTag tbTag02">未監控</div></li>
+                    <li>0056<br>元大高股息</li>
+                    <li class="tbGreen"><div class="tbCircle">783</div></li>
+                    <li class="tbGreen tbBg">3.04</li>
+                    <li class="tbGreen">13.55<span class="txtArrow">▼</span></li>
+                    <li>17404</li>
+                </ul>
+            </div><!--列表 end-->
+
+        </main>
+    </div><!--content end-->
+
+    
+
+    <div class="fixedBottom">
+        <!--快訊-->
+        <div class="immedInfo">
+            <div class="immed01 tbRed tbBg">大盤<span class="txtArrow">▲</span>154.73</div>
+            <div class="immed02"><p class="scrollStyleX">11/06大盤籌碼：外現<span class="tbRed">137.7億</span> 外期<span class="tbGreen">-13233口</span> 散戶<span class="tbGreen">-13233口</span></p></div>
+        </div>
+
+        <!--廣告-->
+        <!-- <div class="adBox01"><img src="images/ad_400x60.jpg" width="100%" alt=""></div> -->
+
+        <!--主選單-->
+        <nav>
+            <ul class="navList">
+                <li><a href="#"><img src="images/nav_monitor.png" width="100%" alt="監控">監控</a></li>
+                <li><a href="#"><img src="images/nav_notice.png" width="100%" alt="監控通知">監控通知</a></li>
+                <li><a href="#" class="click"><img src="images/nav_stock.png" width="100%" alt="選股">選股</a></li>
+                <li><a href="#"><img src="images/nav_selfstock.png" width="100%" alt="自選股">自選股</a></li>
+                <li><a href="#"><img src="images/nav_member.png" width="100%" alt="會員">會員</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+</body>
+</html>

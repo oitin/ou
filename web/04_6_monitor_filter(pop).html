@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<title>04-6個股監控(條件詳細設定)</title>
+<meta name="title" content="">
+<meta name ="description" content ="">
+<meta name="keywords" content ="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="format-detection" content="telephone=no">
+
+<!--社群分享-->
+<meta property="og:title" content="標題" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.活動網址" />
+<meta property="og:image" content="https://活動圖片fbshare_970x510.jpg" />
+<meta property="og:description" content="描述" />
+<meta property="og:site_name" content="標題" />
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/pages.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+
+
+    <div class="popPage">
+        <header class="popHeader">
+        <!--策略-->
+        <!-- <div class="header headerStyle2">
+            <div class="headerBtn"><a href="#" class="hBtn">取消</a></div>
+            <ul class="headerSecTab">
+                <li class="click">多方策略</li>
+                <li>空方策略</li>
+                <li>自訂策略</li>
+            </ul>
+            <div class="headerBtn"><a href="#" class="hBtn">確定</a></div>
+        </div> -->
+
+        <!--自選股清單編輯-->
+        <!-- <div class="header headerStyle2">
+            <div class="headerBtn"><a href="#" class="hBtn">取消</a></div>
+            <ul class="headerSecTab">
+                <li class="click">編輯選股</li>
+                <li>編輯群組</li>
+            </ul>
+            <div class="headerBtn"><a href="#" class="hBtn">確定</a></div>
+        </div> -->
+
+        <!--筆記-->
+        <!-- <div class="header headerStyle2">
+            <div class="headerBtn"><a href="#" class="hBtn">取消</a></div>
+            <h2 class="headerTitle"><span>筆記</span></h2>
+            <div class="headerBtn"><a href="#" class="hBtn">確定</a></div>
+        </div> -->
+
+        <!--新增監控股-->
+        <div class="header headerStyle2">
+            <div class="headerBtn"><a href="#" class="hIcon iconPrev"></a></div>
+            <h2 class="headerTitle"><span>監控股條件設定</span></h2>
+        </div>
+        </header>
+
+        <main class="popContent">
+
+            <!--04-6個股監控(條件詳細設定)-->
+            <div class="monitorFilterBox">
+
+                <!--出場策略----------------------->
+                <ul class="popTableList">
+                    <li>
+                        <a href="#" class="popListName">到價出場</a>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">條件</div>
+                                <div class="moniFilterSelect"><p class="click">≧</p><p>≦</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">價格</div>
+                                <div class="inputTextNum"><span></span><input type="text" inputmode="numeric" value="1" class="inputTextStyle"><span></span></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="popListName">達標出場</a>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">買進價格</div>
+                                <div class="inputTextNum"><span></span><input type="text" inputmode="numeric" value="1" class="inputTextStyle"><span></span></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">條件</div>
+                                <div class="moniFilterSelect"><p class="click">漲</p><p>跌</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">漲跌幅</div>
+                                <input type="text" placeholder="請輸入漲跌幅" class="inputTextStyle">
+                                <div class="moniFilterUnit">%</div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="popListName">均線出場</a>
+                        <a href="#" class="popListDetail">股價>38<br>股價高於設定價11.3漲幅3%</a>
+                        <span class="deleBtn"></span>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">條件</div>
+                                <div class="moniFilterSelect"><p class="click">＞</p><p>＜</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">週期</div>
+                                <div class="moniFilterSelect"><p class="click">5分K</p><p>日K</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">價格</div>
+                                <div class="moniFilterSelect"><p class="click">3</p><p>5</p><P>10</P><P>20</P></div>
+                                <div class="moniFilterUnit">ma</div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="popListName">階梯出場</a>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">條件</div>
+                                <div class="moniFilterSelect"><p class="click">＞</p><p>＜</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">範圍<br><span class="itemNote">不包含今天</span></div>
+                                <div class="moniFilterSelect"><p class="click">1</p><p>2</p><P>3</P><P>5</P></div>
+                                <div class="moniFilterUnit">日內</div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">價格</div>
+                                <div class="moniFilterSelect"><p class="click">最高價</p><p>最低價</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="popListName">移動出場</a>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">買進日期</div>
+                                <input type="text" placeholder="請輸入日期" class="inputTextStyle">
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">方向</div>
+                                <div class="moniFilterSelect"><p class="click">做多(回檔)</p><p>做空(反彈)</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">百分比</div>
+                                <input type="text" placeholder="請輸入百分比" class="inputTextStyle">
+                                <div class="moniFilterUnit">%</div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+                </ul><!--出場策略 end----------------------->
+
+                <!--價量策略----------------------->
+                <ul class="popTableList">
+                    <li>
+                        <a href="#" class="popListName">單量通知</a>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">條件</div>
+                                <div class="moniFilterSelect"><p class="click">＞</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">張數</div>
+                                <input type="text" placeholder="請輸入張數" class="inputTextStyle">
+                                <div class="moniFilterUnit">張</div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="popListName">委買通知</a>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">條件</div>
+                                <div class="moniFilterSelect"><p class="click">＞</p><p>＜</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">委買張數</div>
+                                <div class="inputTextNum"><span></span><input type="text" inputmode="numeric" value="1" class="inputTextStyle"><span></span></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="popListName">價金通知</a>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">條件</div>
+                                <div class="moniFilterSelect"><p class="click">＞</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">價格</div>
+                                <div class="moniFilterSelect"><p class="click">內盤</p><p>外盤</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">成交額</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit">百萬</div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="popListName">委賣通知</a>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">條件</div>
+                                <div class="moniFilterSelect"><p class="click">＞</p><p>＜</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">委賣張數</div>
+                                <div class="inputTextNum"><span></span><input type="text" inputmode="numeric" value="1" class="inputTextStyle"><span></span></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="popListName">創高/創低</a>
+                        <ul class="moniFilterList">
+                            <li>
+                                <div class="moniFilterItem">條件</div>
+                                <div class="moniFilterSelect"><p class="click">新高</p><p>新低</p></div>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">範圍<br></div>
+                                <div class="moniFilterSelect"><p class="click">當日</p><p>昨日</p><P>5</P><P>10</P><p>20</p></div>
+                                <div class="moniFilterUnit">日</div>
+                            </li>
+                            <li>
+                                <div class="moniFilterItem">備註</div>
+                                <textarea name="" placeholder="請輸入備註" class="textAreaStyle"></textarea>
+                                <div class="moniFilterUnit"></div>
+                            </li>
+                        </ul>
+                        <div class="btnArea">
+                            <a href="#" class="btnStyle gray">取消</a>
+                            <a href="#" class="btnStyle red">確定</a>
+                        </div>
+                        <div class="moniFilterInfo">中信金(2345)達標出場：股價小於買進價的跌幅3%</div>
+                    </li>
+                </ul><!--價量策略 end----------------------->
+
+            </div><!--monitorFilterBox end-->
+
+        
+     
+        </main>
+    </div>
+</div>
+</body>
+</html>
