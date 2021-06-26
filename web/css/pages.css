@@ -59,7 +59,7 @@
 .tbGreen.tbBg{ background-color: var(--tbGreenBg); color: #fff;}
 
 /*tbBtn列表功能鈕----*/
-.tbBtnBox{ position: absolute; width: 100%; height: 100%; grid-gap: 20px; background-color: rgba(84,60,14,.95);}
+.tbBtnBox{ position: absolute; width: 100%; height: 100%; -webkit-grid-gap: 20px; background-color: rgba(84,60,14,.95);}
 .tbBtn{ position: relative; display: block; width: 56px; padding: 15px 0; background-color: var(--brown); color: #fff; text-decoration: none; border-radius: 5px;}
 .tbBtn::before{ content: ""; position: absolute; bottom: 3px; right: 0; left: 0; margin: 0 auto; width: 90%; height: 3px; background-color: var(--brownDeep); border-radius: 0 0 5px 5px;}
 .tbBtn.set::after{ content: ""; position: absolute; top: 8%; right: 8%; width: 4px; height: 4px; background-color: #fff; border-radius: 10px;}
