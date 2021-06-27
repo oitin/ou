@@ -62,7 +62,7 @@ body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif
 /*immedInfo----*/
 .immedInfo{ /*position: fixed; bottom: 126px;*/ display: flex; grid-gap: 6px; width: 100%; max-width: 765px; padding: 5px 2%; color: #fff; font-size: var(--txt-xs); background-color: #000;}
 .immed01{ width: 104px; padding: 4px; border-radius: 80px; text-align: center;}
-.immed02{ position: relative; align-self: center; width: calc(100% - 140px); margin: 0 15px;}
+.immed02{ position: relative; align-self: center; width: calc(100% - 145px); margin: 0 15px 0 20px;}
 .immed02::before, .immed02::after{ position: absolute; top: 0; border-top: transparent 6px solid;  border-bottom: transparent 6px solid;}
 .immed02::before{ content: ""; left: -15px; border-left: 0;  border-right: #fff 10px solid;}
 .immed02::after{ content: ""; right: -15px; border-right: 0;  border-left: #fff 10px solid;}
