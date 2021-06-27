@@ -39,7 +39,6 @@
 .deepStyle{ color: #fff;}
 
 /*--tableBox列表------------------------------*/
-/* .tableBox{ height: 50vh; overflow: hidden; overflow-y: scroll;} */
 .tableBox ul:nth-child(even){ background-color: var(--purpleGray);}
 .tableList{ position: relative; display: flex; justify-content: center; font-size: var(--txt-b); text-align: center; line-height: 1.1; word-break: break-all;}
 .tableList li{ display: flex; flex: 1; justify-content: center; align-items: center; min-height: 68px; padding: 8px 1%;}
@@ -123,15 +122,13 @@
 /*--pop內容------------------------------*/
 .popHeader{ position: fixed; top: 0; z-index: 1; width: 100%; max-width: 765px;}
 .popContent{ margin-top: 55px; color: #fff;}
-/*pop內容的上間距*/
-.noteBox, .searchBox, .editBox{ padding-top: 20px;}
+/*pop內容的上間距*/.noteBox, .searchBox, .editBox{ padding-top: 20px;}
 
 /*note筆記----*/
-.noteBox{ /*overflow-y: scroll;*/ width: 95%; /*height: calc(100vh - 100px);*/ margin: 0 auto 20px auto; padding: 20px 0; color: #000; font-size: var(--txt-b); line-height: 1.2;}
+.noteBox{ width: 95%; margin: 0 auto 20px auto; padding: 20px 0; color: #000; font-size: var(--txt-b); line-height: 1.2;}
 .noteBg{ padding: 5%; background-color: #fff; border-radius: 5px;}
 
 /*共用-search搜尋----*/
-.searchBox{ /*margin-top: 80px;*/}
 .searchBar{ position: relative; display: table; margin: 0 auto;}
 .deleBtn{ position: relative; display: block; width: 30px; height: 30px; background-color: var(--gray); border-radius: 50px;}
 .deleBtn::before, .deleBtn::after{ content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; width: 2px; height: 15px; background-color: #fff; border-radius: 10px;}
@@ -155,18 +152,17 @@
 .popTableList > li{ display: flex; flex-wrap: wrap; align-items: center; width: 100%; min-height: 53px; padding: 0 15px; border-bottom: #595959 1px solid;}
 .popTableList > li:first-child{ border-top: #595959 1px solid;}
 .popTableList a{ padding: 15px 0;}
-.popListName{ flex: 1; /*align-self: center;*/ display: inline-block; font-size: var(--txt-b); color: #fff; text-decoration: none;}
-.popListIcons{ flex: 1; /*align-self: center;*/}
+.popListName{ flex: 1; display: inline-block; font-size: var(--txt-b); color: #fff; text-decoration: none;}
+.popListIcons{ flex: 1;}
 .popListIcons .popListIcon{ float: right; width: 30px; margin-left: 20px;}
 
 /*monitorEdit新增監控股----*/
-.editBox{ /*margin-top: 80px;*/}
 .editBox .scrollTabs{ padding-top: 0;}
 .editBox .scrollTabs ~ .popTableList{ margin-top: 0; border-top: 0;}
 .popTableList.monitor .popListName{ flex: 5;}
 
 /*monitorEdit新增監控股----*/
-.editBox .popTableList .deleBtn{ /*align-self: center;*/ margin-right: 15px;}
+.editBox .popTableList .deleBtn{ margin-right: 15px;}
 .monitorBox .txtBox{ text-align: left; margin-bottom: 15px;}
 .monitorBox .txtBox .tbTag{ display: inline-block; width: auto; margin: 0 10px 10px 0; padding: 8px 10px; font-size: var(--txt-b); border-radius: 3px;}
 
@@ -215,9 +211,7 @@
 .moniFilterInfo{ width: 92%; margin: 0 auto 20px auto; font-size: var(--txt-s); line-height: 1.2;}
 }
 
-@media screen and (min-width:767px) {
-
-}
+@media screen and (min-width:767px) {}
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .popHeader{ width: 100%; min-width: 100%;}
