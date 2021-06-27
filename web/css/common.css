@@ -53,7 +53,6 @@ body{ font: 62.5% 微軟正黑體,新細明體,"Century Gothic",Arial,sans-serif
 .hIcon.prev::before{ transform: rotate(135deg);}
 .hIcon.next::before{ transform: rotate(-45deg);} */
 
-
 /*--havHeader------------------------------*/
 /* .havHeader{ padding-top: 56px;} */
 
